@@ -47,54 +47,49 @@ body {
 }
 
 .glow-text {
-  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  text-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
 }
 
 .neon-border {
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 0 10px var(--border-glow), inset 0 0 10px rgba(0, 255, 209, 0.05);
+  border: 2px solid var(--border-subtle);
+  box-shadow: 0 0 15px var(--border-glow), inset 0 0 15px rgba(0, 240, 255, 0.1);
+  border-radius: 12px;
 }
 
 .cyber-card {
-  background: rgba(18, 18, 18, 0.8);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(18, 18, 26, 0.9) 100%);
+  backdrop-filter: blur(20px);
   border: 1px solid var(--border-subtle);
+  border-radius: 16px;
   transition: all 0.4s ease;
-}
-
-.cyber-card:hover {
-  border-color: var(--brand-primary);
-  box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
-  transform: translateY(-4px);
-}
-
-.scan-line {
   position: relative;
   overflow: hidden;
 }
 
-.scan-line::after {
+.cyber-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--brand-primary), transparent);
-  animation: scan 3s infinite;
+  background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-purple), transparent);
+  animation: shimmer 3s infinite;
 }
 
-@keyframes scan {
+.cyber-card:hover {
+  border-color: var(--brand-primary);
+  box-shadow: 0 8px 32px rgba(0, 240, 255, 0.3), 0 0 40px rgba(181, 55, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+@keyframes shimmer {
   0% {
     left: -100%;
   }
   100% {
-    left: 100%;
+    left: 200%;
   }
-}
-
-.glitch {
-  position: relative;
 }
 
 .btn-primary {
