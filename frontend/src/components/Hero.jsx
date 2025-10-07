@@ -28,7 +28,9 @@ const Hero = () => {
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
               Transform Your
               <br />
-              <span className="text-[#00FFD1] glow-text">Resolutions</span>
+              <span className="bg-gradient-to-r from-[#00f0ff] via-[#b537ff] to-[#ff006e] bg-clip-text text-transparent">
+                Resolutions
+              </span>
               <br />
               Into Reality
             </h1>
@@ -36,7 +38,7 @@ const Hero = () => {
             {/* Subheadline */}
             <p className="text-xl lg:text-2xl text-[rgba(255,255,255,0.85)] leading-relaxed">
               A ruthlessly effective productivity app that turns commitments into discipline.
-              <span className="text-[#FF0055] font-semibold"> No excuses. No mercy.</span>
+              <span className="text-[#ff006e] font-semibold"> No excuses. No mercy.</span>
             </p>
 
             {/* CTA Buttons */}
