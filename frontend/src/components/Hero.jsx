@@ -19,9 +19,9 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(0,255,65,0.1)] border border-[rgba(0,255,65,0.3)] scan-line">
-              <Zap size={16} className="text-[#00FF41]" />
-              <span className="text-[#00FF41] text-sm uppercase tracking-wider">Evil Countdown System</span>
+            <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(181,55,255,0.15)] border border-[rgba(0,240,255,0.4)] rounded-full backdrop-blur-sm">
+              <Zap size={16} className="text-[#00f0ff]" />
+              <span className="text-[#00f0ff] text-sm font-semibold tracking-wide">Evil Countdown System</span>
             </div>
 
             {/* Main Headline */}
