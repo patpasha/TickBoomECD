@@ -40,9 +40,11 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#00f0ff] to-[#b537ff] rounded-lg flex items-center justify-center shadow-lg shadow-[#00f0ff]/50">
-                <span className="text-white font-bold text-xl">T</span>
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_tickboom-app/artifacts/7e45afov_TickBooMLogo.png" 
+                alt="TickBoom Logo" 
+                className="h-10 w-auto"
+              />
               <span className="text-xl font-bold tracking-wide">
                 TICK<span className="bg-gradient-to-r from-[#00f0ff] to-[#b537ff] bg-clip-text text-transparent">BOOM</span>
               </span>
