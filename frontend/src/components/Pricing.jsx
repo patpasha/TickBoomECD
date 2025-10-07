@@ -16,7 +16,7 @@ const Pricing = () => {
         'Mobile app access',
         'Community support'
       ],
-      color: '#666666',
+      color: '#8b8b9e',
       cta: 'Start Free',
       popular: false
     },
@@ -35,7 +35,8 @@ const Pricing = () => {
         'Custom notifications',
         'Dark theme variants'
       ],
-      color: '#00FFD1',
+      color: '#00f0ff',
+      gradient: 'from-[#00f0ff] to-[#b537ff]',
       cta: 'Go Premium',
       popular: true
     },
@@ -54,7 +55,8 @@ const Pricing = () => {
         'Exclusive beta features',
         '1-on-1 onboarding call'
       ],
-      color: '#B026FF',
+      color: '#b537ff',
+      gradient: 'from-[#b537ff] to-[#ff006e]',
       cta: 'Go Elite',
       popular: false
     }
@@ -65,11 +67,11 @@ const Pricing = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-[rgba(0,217,255,0.1)] border border-[rgba(0,217,255,0.3)] mb-6">
-            <span className="text-[#00D9FF] text-sm uppercase tracking-wider">Pricing Plans</span>
+          <div className="inline-block px-4 py-3 bg-gradient-to-r from-[rgba(255,0,110,0.15)] to-[rgba(255,214,10,0.15)] border border-[rgba(255,0,110,0.4)] rounded-full mb-6">
+            <span className="text-[#ff006e] text-sm font-semibold tracking-wide">Pricing Plans</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Choose Your <span className="text-[#00FFD1] glow-text">Commitment</span>
+            Choose Your <span className="bg-gradient-to-r from-[#00f0ff] to-[#ff006e] bg-clip-text text-transparent">Commitment</span>
           </h2>
           <p className="text-xl text-[rgba(255,255,255,0.85)] max-w-3xl mx-auto">
             Start free, upgrade when you're ready to unlock maximum potential.
@@ -82,7 +84,7 @@ const Pricing = () => {
             <div
               key={index}
               className={`cyber-card p-8 relative ${
-                plan.popular ? 'border-2' : ''
+                plan.popular ? 'border-2 scale-105' : ''
               }`}
               style={{
                 borderColor: plan.popular ? plan.color : undefined
@@ -91,18 +93,22 @@ const Pricing = () => {
               {/* Popular Badge */}
               {plan.popular && (
                 <div 
-                  className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 flex items-center gap-2"
-                  style={{ background: plan.color, color: '#000' }}
+                  className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-6 py-2 flex items-center gap-2 rounded-full font-bold shadow-lg"
+                  style={{ 
+                    background: `linear-gradient(135deg, ${plan.color}, #b537ff)`,
+                    color: '#fff',
+                    boxShadow: `0 0 30px ${plan.color}60`
+                  }}
                 >
                   <Zap size={14} />
-                  <span className="text-sm font-bold uppercase">Most Popular</span>
+                  <span className="text-sm uppercase">Most Popular</span>
                 </div>
               )}
 
               {/* Plan Header */}
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                <p className="text-[#666666] text-sm mb-6">{plan.description}</p>
+                <p className="text-[#8b8b9e] text-sm mb-6">{plan.description}</p>
                 <div className="flex items-end gap-2">
                   <span 
                     className="text-5xl font-bold"
@@ -110,7 +116,7 @@ const Pricing = () => {
                   >
                     {plan.price}
                   </span>
-                  <span className="text-[#666666] text-lg mb-2">{plan.period}</span>
+                  <span className="text-[#8b8b9e] text-lg mb-2">{plan.period}</span>
                 </div>
               </div>
 
@@ -130,23 +136,25 @@ const Pricing = () => {
 
               {/* CTA Button */}
               <button 
-                className="w-full py-4 font-bold uppercase tracking-wider transition-all border"
+                className="w-full py-4 font-bold uppercase tracking-wider transition-all rounded-xl"
                 style={{
-                  background: plan.popular ? plan.color : 'transparent',
-                  color: plan.popular ? '#000' : plan.color,
-                  borderColor: plan.color,
-                  borderRadius: '0px'
+                  background: plan.popular ? `linear-gradient(135deg, ${plan.color}, #b537ff)` : 'transparent',
+                  color: plan.popular ? '#fff' : plan.color,
+                  border: `2px solid ${plan.color}`,
+                  boxShadow: plan.popular ? `0 4px 20px ${plan.color}40` : 'none'
                 }}
                 onMouseEnter={(e) => {
                   if (!plan.popular) {
-                    e.currentTarget.style.background = plan.color;
-                    e.currentTarget.style.color = '#000';
+                    e.currentTarget.style.background = plan.gradient ? `linear-gradient(135deg, ${plan.color}, #b537ff)` : plan.color;
+                    e.currentTarget.style.color = '#fff';
+                    e.currentTarget.style.boxShadow = `0 4px 20px ${plan.color}60`;
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (!plan.popular) {
                     e.currentTarget.style.background = 'transparent';
                     e.currentTarget.style.color = plan.color;
+                    e.currentTarget.style.boxShadow = 'none';
                   }
                 }}
               >
@@ -158,8 +166,8 @@ const Pricing = () => {
 
         {/* Money Back Guarantee */}
         <div className="text-center mt-12">
-          <p className="text-[#666666]">
-            <span className="text-[#00FFD1]">30-day money-back guarantee</span> on all paid plans. No questions asked.
+          <p className="text-[#8b8b9e]">
+            <span className="text-[#00f0ff] font-semibold">30-day money-back guarantee</span> on all paid plans. No questions asked.
           </p>
         </div>
       </div>

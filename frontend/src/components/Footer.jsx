@@ -33,21 +33,21 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative bg-black border-t border-[rgba(0,255,209,0.2)] py-16 px-6 lg:px-12">
+    <footer className="relative bg-[#0a0a0f] border-t border-[rgba(0,240,255,0.2)] py-16 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#00FFD1] to-[#00FF41] flex items-center justify-center" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }}>
-                <span className="text-black font-bold text-xl">T</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-[#00f0ff] to-[#b537ff] rounded-lg flex items-center justify-center shadow-lg shadow-[#00f0ff]/50">
+                <span className="text-white font-bold text-xl">T</span>
               </div>
-              <span className="text-xl font-bold tracking-wider">
-                TICK<span className="text-[#00FFD1]">BOOM</span>
+              <span className="text-xl font-bold tracking-wide">
+                TICK<span className="bg-gradient-to-r from-[#00f0ff] to-[#b537ff] bg-clip-text text-transparent">BOOM</span>
               </span>
             </div>
-            <p className="text-[#666666] mb-6 max-w-sm">
+            <p className="text-[#8b8b9e] mb-6 max-w-sm">
               Transform your resolutions into reality with ruthless discipline. No excuses, only results.
             </p>
             {/* Social Links */}
@@ -57,7 +57,7 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 border border-[rgba(0,255,209,0.3)] flex items-center justify-center text-[#666666] hover:text-[#00FFD1] hover:border-[#00FFD1] transition-colors"
+                  className="w-10 h-10 border-2 border-[rgba(0,240,255,0.3)] rounded-lg flex items-center justify-center text-[#8b8b9e] hover:text-[#00f0ff] hover:border-[#00f0ff] hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all"
                 >
                   {social.icon}
                 </a>
@@ -74,7 +74,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={link.href}
-                      className="text-[#666666] hover:text-[#00FFD1] transition-colors text-sm"
+                      className="text-[#8b8b9e] hover:text-[#00f0ff] transition-colors text-sm"
                     >
                       {link.label}
                     </a>
@@ -86,12 +86,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[rgba(0,255,209,0.2)] flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[#666666] text-sm">
+        <div className="pt-8 border-t border-[rgba(0,240,255,0.2)] flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[#8b8b9e] text-sm">
             © {currentYear} TickBoom. All rights reserved.
           </p>
-          <p className="text-[#666666] text-sm">
-            Built with <span className="text-[#FF0055]">discipline</span> and <span className="text-[#00FFD1]">code</span>
+          <p className="text-[#8b8b9e] text-sm">
+            Built with <span className="text-[#ff006e]">discipline</span> and <span className="text-[#00f0ff]">code</span>
           </p>
         </div>
       </div>
