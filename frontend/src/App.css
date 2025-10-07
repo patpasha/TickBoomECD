@@ -16,20 +16,20 @@ body {
 }
 
 :root {
-  --bg-primary: #000000;
-  --bg-secondary: #0a0a0a;
-  --bg-card: #121212;
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: #1a1a2e;
   --text-primary: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.85);
-  --text-muted: #666666;
-  --brand-primary: #00FFD1;
-  --brand-neon-green: #00FF41;
-  --brand-purple: #B026FF;
-  --brand-cyan: #00D9FF;
-  --brand-yellow: #FFD700;
-  --brand-red: #FF0055;
-  --border-subtle: rgba(0, 255, 209, 0.2);
-  --border-glow: rgba(0, 255, 209, 0.4);
+  --text-muted: #8b8b9e;
+  --neon-cyan: #00f0ff;
+  --neon-pink: #ff006e;
+  --neon-purple: #b537ff;
+  --neon-blue: #3b82f6;
+  --neon-yellow: #ffd60a;
+  --brand-primary: #00f0ff;
+  --border-subtle: rgba(0, 240, 255, 0.2);
+  --border-glow: rgba(0, 240, 255, 0.6);
 }
 
 .cyberpunk-bg {
