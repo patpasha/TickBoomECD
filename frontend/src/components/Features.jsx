@@ -7,43 +7,43 @@ const Features = () => {
       icon: <Timer size={32} />,
       title: 'Evil Countdowns',
       description: 'Create time-bound commitments with precise countdown timers. Every second counts, every deadline matters.',
-      color: '#00FFD1',
-      gradient: 'from-[#00FFD1] to-[#00FF41]'
+      color: '#00f0ff',
+      gradient: 'from-[#00f0ff] to-[#b537ff]'
     },
     {
       icon: <Flame size={32} />,
       title: 'Streak System',
       description: 'Build unstoppable momentum with daily streaks. Break the chain, face the consequences.',
-      color: '#FF6B35',
-      gradient: 'from-[#FF6B35] to-[#FFD700]'
+      color: '#ff006e',
+      gradient: 'from-[#ff006e] to-[#ffd60a]'
     },
     {
       icon: <Target size={32} />,
       title: 'Commitment Tracking',
       description: 'Track multiple goals simultaneously. See your progress in real-time with brutal honesty.',
-      color: '#B026FF',
-      gradient: 'from-[#B026FF] to-[#00D9FF]'
+      color: '#b537ff',
+      gradient: 'from-[#b537ff] to-[#00f0ff]'
     },
     {
       icon: <Skull size={32} />,
       title: 'No Mercy Mode',
       description: 'Abandon a task? It counts as failure. This app doesn\'t accept excuses—only results.',
-      color: '#FF0055',
-      gradient: 'from-[#FF0055] to-[#FF6B35]'
+      color: '#ff006e',
+      gradient: 'from-[#ff006e] to-[#b537ff]'
     },
     {
       icon: <TrendingUp size={32} />,
       title: 'Performance Analytics',
       description: 'Track success rates, completion times, and personal bests. Data-driven discipline.',
-      color: '#00D9FF',
-      gradient: 'from-[#00D9FF] to-[#00FFD1]'
+      color: '#3b82f6',
+      gradient: 'from-[#3b82f6] to-[#00f0ff]'
     },
     {
       icon: <Trophy size={32} />,
       title: 'Gamification',
       description: 'Earn achievements, unlock badges, and compete with yourself. Make discipline addictive.',
-      color: '#FFD700',
-      gradient: 'from-[#FFD700] to-[#00FF41]'
+      color: '#ffd60a',
+      gradient: 'from-[#ffd60a] to-[#ff006e]'
     }
   ];
 
