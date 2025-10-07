@@ -103,7 +103,7 @@ body {
   border: none;
   border-radius: 0px;
   padding: 16px 32px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -113,9 +113,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-family: 'Kode Mono', monospace;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn-primary:hover {
@@ -130,7 +130,7 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: 0px;
   padding: 16px 32px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -140,9 +140,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-family: 'Kode Mono', monospace;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn-secondary:hover {
