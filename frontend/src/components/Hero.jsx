@@ -1,0 +1,100 @@
+import React from 'react';
+import { ArrowRight, Zap } from 'lucide-react';
+
+const Hero = () => {
+  const scrollToCTA = () => {
+    const element = document.getElementById('cta');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-6 lg:px-12 overflow-hidden">
+      {/* Background Effects */}
+      <div className="matrix-bg"></div>
+      <div className="grid-overlay"></div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Content */}
+          <div className="space-y-8">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(0,255,65,0.1)] border border-[rgba(0,255,65,0.3)] scan-line">
+              <Zap size={16} className="text-[#00FF41]" />
+              <span className="text-[#00FF41] text-sm uppercase tracking-wider">Evil Countdown System</span>
+            </div>
+
+            {/* Main Headline */}
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              Transform Your
+              <br />
+              <span className="text-[#00FFD1] glow-text">Resolutions</span>
+              <br />
+              Into Reality
+            </h1>
+
+            {/* Subheadline */}
+            <p className="text-xl lg:text-2xl text-[rgba(255,255,255,0.85)] leading-relaxed">
+              A ruthlessly effective productivity app that turns commitments into discipline.
+              <span className="text-[#FF0055] font-semibold"> No excuses. No mercy.</span>
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <button onClick={scrollToCTA} className="btn-primary">
+                Join Waitlist
+                <ArrowRight size={20} />
+              </button>
+              <button onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })} className="btn-secondary">
+                See How It Works
+              </button>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[rgba(0,255,209,0.2)]">
+              <div>
+                <div className="text-3xl font-bold text-[#00FFD1]">10K+</div>
+                <div className="text-sm text-[#666666] uppercase tracking-wider mt-1">Commitments</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-[#B026FF]">87%</div>
+                <div className="text-sm text-[#666666] uppercase tracking-wider mt-1">Success Rate</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-[#00FF41]">2.5M</div>
+                <div className="text-sm text-[#666666] uppercase tracking-wider mt-1">Hours Tracked</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - App Mockup */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[400px]">
+              {/* Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#00FFD1] via-[#B026FF] to-[#00FF41] opacity-20 blur-3xl"></div>
+              
+              {/* Phone Frame */}
+              <div className="relative bg-[#0a0a0a] border-4 border-[rgba(0,255,209,0.3)] rounded-[40px] p-4 shadow-2xl">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_10c2b901-01a3-4304-be9a-6469e856b335/artifacts/csre6lct_IMG_7892.PNG" 
+                  alt="TickBoom App" 
+                  className="w-full rounded-[28px]"
+                />
+                
+                {/* Scan Line Effect */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00FFD1] to-transparent animate-pulse"></div>
+              </div>
+
+              {/* Floating Elements */}
+              <div className="absolute -top-8 -right-8 w-24 h-24 bg-[#00FFD1] opacity-20 blur-2xl rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#B026FF] opacity-20 blur-2xl rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
