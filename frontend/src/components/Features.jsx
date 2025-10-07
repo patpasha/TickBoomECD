@@ -73,12 +73,15 @@ const Features = () => {
             >
               {/* Icon */}
               <div 
-                className="w-16 h-16 mb-6 flex items-center justify-center border border-[rgba(0,255,209,0.3)] relative"
-                style={{ color: feature.color }}
+                className="w-16 h-16 mb-6 flex items-center justify-center rounded-xl relative bg-gradient-to-br"
+                style={{ 
+                  color: feature.color,
+                  background: `linear-gradient(135deg, ${feature.color}20, ${feature.color}10)`
+                }}
               >
                 {feature.icon}
                 <div 
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity blur-xl"
+                  className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity blur-2xl rounded-xl"
                   style={{ background: feature.color }}
                 ></div>
               </div>
@@ -88,9 +91,6 @@ const Features = () => {
               <p className="text-[rgba(255,255,255,0.7)] leading-relaxed">
                 {feature.description}
               </p>
-
-              {/* Hover Border Effect */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: `linear-gradient(90deg, ${feature.color}, transparent)` }}></div>
             </div>
           ))}
         </div>
