@@ -13,16 +13,16 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-[rgba(0,255,209,0.2)]">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[rgba(10,10,15,0.8)] backdrop-blur-xl border-b border-[rgba(0,240,255,0.2)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#00FFD1] to-[#00FF41] flex items-center justify-center" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)' }}>
-              <span className="text-black font-bold text-xl">T</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-[#00f0ff] to-[#b537ff] rounded-lg flex items-center justify-center shadow-lg shadow-[#00f0ff]/50">
+              <span className="text-white font-bold text-xl">T</span>
             </div>
-            <span className="text-xl font-bold tracking-wider">
-              TICK<span className="text-[#00FFD1]">BOOM</span>
+            <span className="text-xl font-bold tracking-wide">
+              TICK<span className="bg-gradient-to-r from-[#00f0ff] to-[#b537ff] bg-clip-text text-transparent">BOOM</span>
             </span>
           </div>
 
