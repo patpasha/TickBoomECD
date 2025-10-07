@@ -93,15 +93,15 @@ body {
 }
 
 .btn-primary {
-  background: var(--brand-primary);
-  color: #000000;
+  background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-purple) 100%);
+  color: #FFFFFF;
   border: none;
-  border-radius: 0px;
+  border-radius: 12px;
   padding: 16px 32px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   min-height: 56px;
   text-decoration: none;
   display: inline-flex;
@@ -111,24 +111,41 @@ body {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 240, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
 }
 
 .btn-primary:hover {
-  background: var(--brand-neon-green);
-  box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
-  transform: scale(1.02);
+  box-shadow: 0 6px 30px rgba(0, 240, 255, 0.6), 0 0 40px rgba(181, 55, 255, 0.4);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   color: #FFFFFF;
-  border: 1px solid var(--border-subtle);
-  border-radius: 0px;
+  border: 2px solid var(--border-subtle);
+  border-radius: 12px;
   padding: 16px 32px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   min-height: 56px;
   text-decoration: none;
   display: inline-flex;
@@ -141,10 +158,11 @@ body {
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 240, 255, 0.1);
   border-color: var(--brand-primary);
   color: var(--brand-primary);
-  box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
