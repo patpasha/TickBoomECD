@@ -52,11 +52,11 @@ const Features = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 bg-[rgba(176,38,255,0.1)] border border-[rgba(176,38,255,0.3)] mb-6">
-            <span className="text-[#B026FF] text-sm uppercase tracking-wider">Core Features</span>
+          <div className="inline-block px-4 py-3 bg-gradient-to-r from-[rgba(181,55,255,0.15)] to-[rgba(255,0,110,0.15)] border border-[rgba(181,55,255,0.4)] rounded-full mb-6">
+            <span className="text-[#b537ff] text-sm font-semibold tracking-wide">Core Features</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Built for <span className="text-[#00FFD1] glow-text">Discipline</span>
+            Built for <span className="bg-gradient-to-r from-[#00f0ff] to-[#b537ff] bg-clip-text text-transparent">Discipline</span>
           </h2>
           <p className="text-xl text-[rgba(255,255,255,0.85)] max-w-3xl mx-auto">
             Every feature designed to transform intentions into action. No fluff, only results.
