@@ -53,14 +53,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-[rgba(0,255,209,0.2)] pt-4">
-            <button onClick={() => scrollToSection('features')} className="text-[#666666] hover:text-[#00FFD1] transition-colors text-left">
+          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-[rgba(0,240,255,0.2)] pt-4">
+            <button onClick={() => scrollToSection('features')} className="text-[#8b8b9e] hover:text-[#00f0ff] transition-colors text-left font-medium">
               Features
             </button>
-            <button onClick={() => scrollToSection('how-it-works')} className="text-[#666666] hover:text-[#00FFD1] transition-colors text-left">
+            <button onClick={() => scrollToSection('how-it-works')} className="text-[#8b8b9e] hover:text-[#00f0ff] transition-colors text-left font-medium">
               How It Works
             </button>
-            <button onClick={() => scrollToSection('pricing')} className="text-[#666666] hover:text-[#00FFD1] transition-colors text-left">
+            <button onClick={() => scrollToSection('pricing')} className="text-[#8b8b9e] hover:text-[#00f0ff] transition-colors text-left font-medium">
               Pricing
             </button>
             <button onClick={() => scrollToSection('cta')} className="btn-primary w-full text-sm">
