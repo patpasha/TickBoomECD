@@ -110,7 +110,7 @@ body {
   gap: 12px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   box-shadow: 0 4px 20px rgba(0, 240, 255, 0.4);
   position: relative;
   overflow: hidden;
@@ -154,7 +154,7 @@ body {
   gap: 12px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .btn-secondary:hover {
