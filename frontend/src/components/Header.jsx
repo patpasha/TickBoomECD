@@ -28,13 +28,13 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('features')} className="text-[#666666] hover:text-[#00FFD1] transition-colors text-base">
+            <button onClick={() => scrollToSection('features')} className="text-[#8b8b9e] hover:text-[#00f0ff] transition-colors text-base font-medium">
               Features
             </button>
-            <button onClick={() => scrollToSection('how-it-works')} className="text-[#666666] hover:text-[#00FFD1] transition-colors text-base">
+            <button onClick={() => scrollToSection('how-it-works')} className="text-[#8b8b9e] hover:text-[#00f0ff] transition-colors text-base font-medium">
               How It Works
             </button>
-            <button onClick={() => scrollToSection('pricing')} className="text-[#666666] hover:text-[#00FFD1] transition-colors text-base">
+            <button onClick={() => scrollToSection('pricing')} className="text-[#8b8b9e] hover:text-[#00f0ff] transition-colors text-base font-medium">
               Pricing
             </button>
             <button onClick={() => scrollToSection('cta')} className="btn-primary px-6 py-2 min-h-[44px] text-sm">
