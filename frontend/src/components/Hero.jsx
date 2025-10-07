@@ -53,18 +53,18 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[rgba(0,255,209,0.2)]">
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[rgba(0,240,255,0.2)]">
               <div>
-                <div className="text-3xl font-bold text-[#00FFD1]">10K+</div>
-                <div className="text-sm text-[#666666] uppercase tracking-wider mt-1">Commitments</div>
+                <div className="text-3xl font-bold text-[#00f0ff]">10K+</div>
+                <div className="text-sm text-[#8b8b9e] uppercase tracking-wider mt-1">Commitments</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#B026FF]">87%</div>
-                <div className="text-sm text-[#666666] uppercase tracking-wider mt-1">Success Rate</div>
+                <div className="text-3xl font-bold text-[#b537ff]">87%</div>
+                <div className="text-sm text-[#8b8b9e] uppercase tracking-wider mt-1">Success Rate</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#00FF41]">2.5M</div>
-                <div className="text-sm text-[#666666] uppercase tracking-wider mt-1">Hours Tracked</div>
+                <div className="text-3xl font-bold text-[#ff006e]">2.5M</div>
+                <div className="text-sm text-[#8b8b9e] uppercase tracking-wider mt-1">Hours Tracked</div>
               </div>
             </div>
           </div>
