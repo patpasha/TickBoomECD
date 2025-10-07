@@ -12,8 +12,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-6 lg:px-12 overflow-hidden">
       {/* Background Effects */}
-      <div className="matrix-bg"></div>
-      <div className="grid-overlay"></div>
+      <div className="cyberpunk-bg"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
