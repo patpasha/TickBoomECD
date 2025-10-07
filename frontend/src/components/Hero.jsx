@@ -73,23 +73,21 @@ const Hero = () => {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[400px]">
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00FFD1] via-[#B026FF] to-[#00FF41] opacity-20 blur-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff] via-[#b537ff] to-[#ff006e] opacity-25 blur-3xl"></div>
               
               {/* Phone Frame */}
-              <div className="relative bg-[#0a0a0a] border-4 border-[rgba(0,255,209,0.3)] rounded-[40px] p-4 shadow-2xl">
+              <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#12121a] border-2 border-[rgba(0,240,255,0.4)] rounded-[40px] p-4 shadow-2xl">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_10c2b901-01a3-4304-be9a-6469e856b335/artifacts/csre6lct_IMG_7892.PNG" 
                   alt="TickBoom App" 
                   className="w-full rounded-[28px]"
                 />
-                
-                {/* Scan Line Effect */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00FFD1] to-transparent animate-pulse"></div>
               </div>
 
-              {/* Floating Elements */}
-              <div className="absolute -top-8 -right-8 w-24 h-24 bg-[#00FFD1] opacity-20 blur-2xl rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#B026FF] opacity-20 blur-2xl rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+              {/* Floating Neon Elements */}
+              <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#00f0ff] opacity-20 blur-3xl rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-[#ff006e] opacity-20 blur-3xl rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute top-1/2 -right-12 w-24 h-24 bg-[#b537ff] opacity-20 blur-3xl rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
             </div>
           </div>
         </div>
