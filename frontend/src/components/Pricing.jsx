@@ -22,7 +22,7 @@ const Pricing = () => {
     },
     {
       name: 'Discipline',
-      price: '$9.99',
+      price: '$3.99',
       period: '/month',
       description: 'For serious individuals ready to level up',
       features: [
