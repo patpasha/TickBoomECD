@@ -40,8 +40,8 @@ const Features = () => {
     },
     {
       icon: <Trophy size={32} />,
-      title: 'Gamification',
-      description: 'Earn achievements, unlock badges, and compete with yourself. Make discipline addictive.',
+      title: 'Progress Tracking',
+      description: 'Visualize your growth with detailed stats and streak milestones. Compete with yourself and watch your discipline compound.',
       color: '#ffd60a',
       gradient: 'from-[#ffd60a] to-[#ff006e]'
     }
