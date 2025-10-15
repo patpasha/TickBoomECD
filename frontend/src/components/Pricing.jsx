@@ -161,6 +161,7 @@ const Pricing = () => {
               >
                 {plan.cta}
               </button>
+              </div>
             </div>
           ))}
         </div>
