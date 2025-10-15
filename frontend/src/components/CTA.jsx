@@ -76,16 +76,16 @@ const CTA = () => {
             <div className="mt-12 pt-12 border-t border-[rgba(0,240,255,0.2)]">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-[#00f0ff] mb-2">5,000+</div>
-                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">On Waitlist</div>
+                  <div className="text-3xl font-bold text-[#00f0ff] mb-2">500+</div>
+                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Early Adopters</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#b537ff] mb-2">iOS & Android</div>
-                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Both Platforms</div>
+                  <div className="text-3xl font-bold text-[#b537ff] mb-2">iOS</div>
+                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Available Now</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#ff006e] mb-2">Q2 2025</div>
-                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Launch Date</div>
+                  <div className="text-3xl font-bold text-[#ff006e] mb-2">Q4 2025</div>
+                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Android Launch</div>
                 </div>
               </div>
             </div>
