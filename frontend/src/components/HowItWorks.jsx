@@ -28,7 +28,7 @@ const HowItWorks = () => {
       number: '04',
       icon: <Award size={32} />,
       title: 'Build Discipline',
-      description: 'Complete tasks, build streaks, unlock achievements. Transform into your best self.',
+      description: 'Complete tasks, build streaks, track your growth. Transform into your best self.',
       color: '#ffd60a'
     }
   ];
