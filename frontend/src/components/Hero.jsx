@@ -42,14 +42,14 @@ const Hero = () => {
             </p>
 
             {/* Release Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(181,55,255,0.15)] border border-[rgba(0,240,255,0.4)] rounded-full backdrop-blur-sm mb-4">
-              <span className="text-[#00f0ff] text-sm font-semibold">🎉 Now Available on App Store — TestFlight Beta Closed</span>
+            <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(181,55,255,0.15)] to-[rgba(0,240,255,0.15)] border border-[rgba(181,55,255,0.4)] rounded-full backdrop-blur-sm mb-4">
+              <span className="text-[#b537ff] text-sm font-semibold">TestFlight Beta Closed - Available soon on App Store</span>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button onClick={scrollToCTA} className="btn-primary">
-                Download Now
+                Join Waitlist
                 <ArrowRight size={20} />
               </button>
               <button onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })} className="btn-secondary">
