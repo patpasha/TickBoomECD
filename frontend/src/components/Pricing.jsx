@@ -83,8 +83,8 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`cyber-card p-8 relative ${
-                plan.popular ? 'border-2 scale-105' : ''
+              className={`cyber-card relative ${
+                plan.popular ? 'border-2 scale-105 pt-16 pb-8 px-8' : 'p-8'
               }`}
               style={{
                 borderColor: plan.popular ? plan.color : undefined
@@ -93,7 +93,7 @@ const Pricing = () => {
               {/* Popular Badge */}
               {plan.popular && (
                 <div 
-                  className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-6 py-2 flex items-center gap-2 rounded-full font-bold shadow-lg"
+                  className="absolute -top-5 left-1/2 transform -translate-x-1/2 px-6 py-2 flex items-center gap-2 rounded-full font-bold shadow-lg whitespace-nowrap z-10"
                   style={{ 
                     background: `linear-gradient(135deg, ${plan.color}, #b537ff)`,
                     color: '#fff',
@@ -106,7 +106,7 @@ const Pricing = () => {
               )}
 
               {/* Plan Header */}
-              <div className="mb-8">
+              <div className={`mb-8 ${plan.popular ? 'mt-2' : ''}`}>
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <p className="text-[#8b8b9e] text-sm mb-6">{plan.description}</p>
                 <div className="flex items-end gap-2">
