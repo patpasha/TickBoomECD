@@ -178,30 +178,26 @@ const Pricing = () => {
               </div>
               
               <h3 className="text-2xl lg:text-3xl font-bold mb-3">
-                <span className="bg-gradient-to-r from-[#ffd60a] to-[#ff006e] bg-clip-text text-transparent">Lifetime</span> Version - $79.99
+                <span className="bg-gradient-to-r from-[#ffd60a] to-[#ff006e] bg-clip-text text-transparent">Lifetime Access</span> - $79.99
               </h3>
               
-              <p className="text-lg text-[rgba(255,255,255,0.85)] mb-4">
-                Reserved for the <span className="text-[#ffd60a] font-bold">first 150 buyers</span> only!
+              <p className="text-lg text-[rgba(255,255,255,0.85)] mb-6">
+                <span className="text-[#ffd60a] font-bold">First 150 buyers</span> get exclusive lifetime access — lock in your spot now!
               </p>
               
-              <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
+              <div className="flex flex-col items-center gap-3 mb-6 text-[rgba(255,255,255,0.85)]">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-[#00f0ff] rounded-full animate-pulse"></div>
-                  <span className="text-sm text-[#8b8b9e]">Lifetime Access</span>
+                  <div className="w-2 h-2 bg-[#00f0ff] rounded-full"></div>
+                  <span className="text-base">All premium features, forever.</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-[#b537ff] rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                  <span className="text-sm text-[#8b8b9e]">All Features</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-[#ff006e] rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-                  <span className="text-sm text-[#8b8b9e]">Free Updates</span>
+                  <div className="w-2 h-2 bg-[#b537ff] rounded-full"></div>
+                  <span className="text-base">Free updates included.</span>
                 </div>
               </div>
               
-              <p className="text-sm text-[#8b8b9e]">
-                <span className="text-[#ffd60a]">⚡ Only a few spots left</span> - Don't miss this unique opportunity!
+              <p className="text-base text-[rgba(255,255,255,0.9)] font-semibold">
+                <span className="text-[#ffd60a]">⚡ Only a few spots left</span> — grab your lifetime pass!
               </p>
             </div>
           </div>
