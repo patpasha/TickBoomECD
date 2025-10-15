@@ -166,11 +166,45 @@ const Pricing = () => {
           ))}
         </div>
 
-        {/* Money Back Guarantee */}
-        <div className="text-center mt-12">
-          <p className="text-[#8b8b9e]">
-            <span className="text-[#00f0ff] font-semibold">30-day money-back guarantee</span> on all paid plans. No questions asked.
-          </p>
+        {/* Limited Time Offer */}
+        <div className="mt-12 max-w-4xl mx-auto">
+          <div className="cyber-card p-8 text-center relative overflow-hidden">
+            {/* Animated border top */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#ffd60a] via-[#ff006e] to-[#ffd60a] animate-pulse"></div>
+            
+            <div className="relative z-10">
+              <div className="inline-block px-4 py-2 bg-gradient-to-r from-[rgba(255,214,10,0.2)] to-[rgba(255,0,110,0.2)] border border-[rgba(255,214,10,0.5)] rounded-full mb-4">
+                <span className="text-[#ffd60a] text-sm font-bold uppercase tracking-wider">🔥 Offre Limitée</span>
+              </div>
+              
+              <h3 className="text-2xl lg:text-3xl font-bold mb-3">
+                Version <span className="bg-gradient-to-r from-[#ffd60a] to-[#ff006e] bg-clip-text text-transparent">Lifetime</span> - $79.99
+              </h3>
+              
+              <p className="text-lg text-[rgba(255,255,255,0.85)] mb-4">
+                Réservé aux <span className="text-[#ffd60a] font-bold">150 premiers acheteurs</span> uniquement !
+              </p>
+              
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-[#00f0ff] rounded-full animate-pulse"></div>
+                  <span className="text-sm text-[#8b8b9e]">Accès à vie</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-[#b537ff] rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                  <span className="text-sm text-[#8b8b9e]">Toutes les fonctionnalités</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 bg-[#ff006e] rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+                  <span className="text-sm text-[#8b8b9e]">Mises à jour gratuites</span>
+                </div>
+              </div>
+              
+              <p className="text-sm text-[#8b8b9e]">
+                <span className="text-[#ffd60a]">⚡ Plus que quelques places disponibles</span> - Ne manquez pas cette opportunité unique !
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
