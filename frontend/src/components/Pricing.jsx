@@ -79,21 +79,13 @@ const Pricing = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto mt-8">
           {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`cyber-card relative ${
-                plan.popular ? 'border-2 scale-105 pt-16 pb-8 px-8' : 'p-8'
-              }`}
-              style={{
-                borderColor: plan.popular ? plan.color : undefined
-              }}
-            >
+            <div key={index} className="relative">
               {/* Popular Badge */}
               {plan.popular && (
                 <div 
-                  className="absolute -top-5 left-1/2 transform -translate-x-1/2 px-6 py-2 flex items-center gap-2 rounded-full font-bold shadow-lg whitespace-nowrap z-10"
+                  className="absolute -top-5 left-1/2 transform -translate-x-1/2 px-6 py-2 flex items-center gap-2 rounded-full font-bold shadow-lg whitespace-nowrap z-20"
                   style={{ 
                     background: `linear-gradient(135deg, ${plan.color}, #b537ff)`,
                     color: '#fff',
@@ -104,9 +96,18 @@ const Pricing = () => {
                   <span className="text-sm uppercase">Most Popular</span>
                 </div>
               )}
-
-              {/* Plan Header */}
-              <div className={`mb-8 ${plan.popular ? 'mt-2' : ''}`}>
+              
+              <div
+                className={`cyber-card p-8 h-full ${
+                  plan.popular ? 'border-2' : ''
+                }`}
+                style={{
+                  borderColor: plan.popular ? plan.color : undefined,
+                  overflow: 'visible'
+                }}
+              >
+                {/* Plan Header */}
+                <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <p className="text-[#8b8b9e] text-sm mb-6">{plan.description}</p>
                 <div className="flex items-end gap-2">
