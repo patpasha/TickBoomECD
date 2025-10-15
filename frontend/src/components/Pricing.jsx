@@ -42,8 +42,8 @@ const Pricing = () => {
     },
     {
       name: 'Elite',
-      price: '$19.99',
-      period: '/month',
+      price: '$29.99',
+      period: '/year',
       description: 'Maximum power for those who demand excellence',
       features: [
         'Everything in Discipline',
