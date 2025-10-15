@@ -182,7 +182,7 @@ const Pricing = () => {
               </h3>
               
               <p className="text-lg text-[rgba(255,255,255,0.85)] mb-6">
-                <span className="text-[#ffd60a] font-bold">First 150 buyers</span> get exclusive lifetime access — lock in your spot now!
+                Limited to <span className="text-[#ffd60a] font-bold">150 spots only</span> — pay once, own it forever.
               </p>
               
               <div className="flex flex-col items-center gap-3 mb-6 text-[rgba(255,255,255,0.85)]">
