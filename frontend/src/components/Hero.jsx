@@ -42,7 +42,7 @@ const Hero = () => {
 
             {/* Subheadline */}
             <p className="text-xl lg:text-2xl text-[rgba(255,255,255,0.85)] leading-relaxed">
-              A ruthlessly effective productivity app that turns commitments into discipline.
+              A ruthlessly effective productivity app that turns commitments into discipline. ADHD-friendly design for better focus.
               <span className="text-[#ff006e] font-semibold"> No excuses. No mercy.</span>
             </p>
 
