@@ -65,12 +65,21 @@ app.include_router(api_router)
 # Include waitlist router
 app.include_router(waitlist_router)
 
+# Get allowed origins from environment or use default
+ALLOWED_ORIGINS = os.environ.get('ALLOWED_ORIGINS', '').split(',')
+if not ALLOWED_ORIGINS or ALLOWED_ORIGINS == ['']:
+    # Default for development - restrict in production
+    ALLOWED_ORIGINS = [
+        "http://localhost:3000",
+        "https://tickboom-app.preview.emergentagent.com"
+    ]
+
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=os.environ.get('CORS_ORIGINS', '*').split(','),
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=ALLOWED_ORIGINS,
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type", "Authorization"],
 )
 
 # Configure logging
