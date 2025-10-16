@@ -81,10 +81,12 @@ async def get_waitlist_count(request: Request):
 
 
 @router.get("/all")
-async def get_all_subscribers():
+@limiter.limit("5/minute")  # Max 5 requests per minute per IP
+async def get_all_subscribers(request: Request):
     """
     Get all waitlist subscribers (for admin use)
     Returns list of all emails with timestamps
+    Rate limited: 5 requests per minute per IP
     """
     try:
         subscribers = await db.waitlist.find().sort("created_at", -1).to_list(10000)
