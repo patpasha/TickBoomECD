@@ -48,122 +48,54 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="max-w-2xl mx-auto space-y-8">
           {/* Contact Info */}
-          <div className="space-y-8">
-            <div className="cyber-card p-8">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#00f0ff] to-[#b537ff] rounded-lg flex items-center justify-center">
-                  <Mail size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Email Us</h3>
-                  <p className="text-[#8b8b9e]">We'll respond within 24 hours</p>
-                </div>
+          <div className="cyber-card p-8">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#00f0ff] to-[#b537ff] rounded-lg flex items-center justify-center">
+                <Mail size={24} />
               </div>
-              <a 
-                href="mailto:support@tickboom.app" 
-                className="text-[#00f0ff] hover:text-[#b537ff] transition-colors text-lg font-semibold"
-              >
-                support@tickboom.app
-              </a>
+              <div>
+                <h3 className="text-xl font-bold">Email Us</h3>
+                <p className="text-[#8b8b9e]">We'll respond within 24 hours</p>
+              </div>
             </div>
-
-            <div className="cyber-card p-8">
-              <h3 className="text-xl font-bold mb-4">What can we help with?</h3>
-              <ul className="space-y-3 text-[rgba(255,255,255,0.85)]">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00f0ff]">•</span>
-                  <span>General inquiries</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00f0ff]">•</span>
-                  <span>Technical support</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00f0ff]">•</span>
-                  <span>Beta testing feedback</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00f0ff]">•</span>
-                  <span>Business inquiries & acquisition</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00f0ff]">•</span>
-                  <span>Partnership opportunities</span>
-                </li>
-              </ul>
-            </div>
+            <a 
+              href="mailto:support@tickboom.app" 
+              className="text-[#00f0ff] hover:text-[#b537ff] transition-colors text-lg font-semibold"
+            >
+              support@tickboom.app
+            </a>
           </div>
 
-          {/* Contact Form */}
           <div className="cyber-card p-8">
-            {!submitted ? (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-4 py-3 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-4 py-3 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Subject</label>
-                  <input
-                    type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-4 py-3 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl"
-                    placeholder="How can we help?"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Message</label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-4 py-3 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl resize-none"
-                    placeholder="Tell us more..."
-                  />
-                </div>
-
-                <button type="submit" className="btn-primary w-full">
-                  Send Message
-                  <Send size={20} />
-                </button>
-              </form>
-            ) : (
-              <div className="flex flex-col items-center justify-center py-12">
-                <CheckCircle2 size={64} className="text-[#00f0ff] mb-4" />
-                <p className="text-xl font-semibold text-center">Your email client will open shortly!</p>
-                <p className="text-[#8b8b9e] text-center mt-2">We'll get back to you soon.</p>
-              </div>
-            )}
+            <h3 className="text-xl font-bold mb-4">What can we help with?</h3>
+            <ul className="space-y-3 text-[rgba(255,255,255,0.85)]">
+              <li className="flex items-start gap-2">
+                <span className="text-[#00f0ff]">•</span>
+                <span>General inquiries</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#00f0ff]">•</span>
+                <span>Technical support</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#00f0ff]">•</span>
+                <span>Beta testing feedback</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#00f0ff]">•</span>
+                <span>Feature suggestions & improvements</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#00f0ff]">•</span>
+                <span>Business inquiries & acquisition</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#00f0ff]">•</span>
+                <span>Partnership opportunities</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
