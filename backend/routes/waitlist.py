@@ -63,9 +63,11 @@ async def subscribe_to_waitlist(request: Request, data: WaitlistCreate):
 
 
 @router.get("/count")
-async def get_waitlist_count():
+@limiter.limit("10/minute")  # Max 10 requests per minute per IP
+async def get_waitlist_count(request: Request):
     """
     Get the total number of waitlist subscribers
+    Rate limited: 10 requests per minute per IP
     """
     try:
         count = await db.waitlist.count_documents({})
