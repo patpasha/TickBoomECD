@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://tickboom.app/sitemap.xml
+
+# Disallow admin or backend routes if any
+Disallow: /api/
