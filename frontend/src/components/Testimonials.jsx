@@ -106,11 +106,9 @@ const Testimonials = () => {
 
               {/* User Info */}
               <div className="flex items-center gap-3 pt-4 border-t border-[rgba(0,240,255,0.2)]">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full border-2 border-[rgba(0,240,255,0.3)]"
-                />
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#00f0ff] to-[#b537ff] flex items-center justify-center font-bold text-lg">
+                  {testimonial.name.charAt(0)}
+                </div>
                 <div>
                   <div className="font-semibold text-white">{testimonial.name}</div>
                   <div className="text-sm text-[#8b8b9e]">{testimonial.role}</div>
