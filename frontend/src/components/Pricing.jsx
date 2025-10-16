@@ -9,12 +9,11 @@ const Pricing = () => {
       period: 'Forever',
       description: 'Perfect for getting started with commitment tracking',
       features: [
-        'Up to 5 active commitments',
+        'Up to 10 commitments',
+        'Up to 2 active commitments',
         'Basic countdown timers',
-        'Streak tracking',
-        'Performance dashboard',
-        'Mobile app access',
-        'Community support'
+        'Streak countdown',
+        'Basic analytics'
       ],
       color: '#8b8b9e',
       cta: 'Start Free',
@@ -27,13 +26,14 @@ const Pricing = () => {
       description: 'For serious individuals ready to level up',
       features: [
         'Unlimited commitments',
-        'Advanced timer customization',
-        'Detailed analytics & insights',
-        'Achievement system',
+        'Up to 5 active commitments',
+        'Design timer customization',
+        'Detailed analytics & Insights',
+        'Streak tracking',
         'Priority support',
-        'Export data & reports',
         'Custom notifications',
-        'Dark theme variants'
+        'Dark/Light theme variants',
+        'Exclusive beta features'
       ],
       color: '#00f0ff',
       gradient: 'from-[#00f0ff] to-[#b537ff]',
@@ -44,16 +44,17 @@ const Pricing = () => {
       name: 'Elite',
       price: '$29.99',
       period: '/year',
-      description: 'Maximum power for those who demand excellence',
+      description: 'Save 37% with annual billing - same features as Discipline',
       features: [
-        'Everything in Discipline',
-        'AI-powered insights',
-        'Team & group challenges',
-        'Personal coach mode',
-        'API access',
-        'White-label options',
-        'Exclusive beta features',
-        '1-on-1 onboarding call'
+        'Unlimited commitments',
+        'Up to 5 active commitments',
+        'Design timer customization',
+        'Detailed analytics & Insights',
+        'Streak tracking',
+        'Priority support',
+        'Custom notifications',
+        'Dark/Light theme variants',
+        'Exclusive beta features'
       ],
       color: '#b537ff',
       gradient: 'from-[#b537ff] to-[#ff006e]',
