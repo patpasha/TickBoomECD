@@ -44,7 +44,8 @@ const Pricing = () => {
       name: 'Elite',
       price: '$29.99',
       period: '/year',
-      description: 'Save 37% with annual billing - same features as Discipline',
+      description: 'Best value - same features as Discipline, billed annually',
+      originalPrice: '$47.88',
       features: [
         'Unlimited commitments',
         'Up to 5 active commitments',
