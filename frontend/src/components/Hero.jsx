@@ -80,24 +80,33 @@ const Hero = () => {
           </div>
 
           {/* Right Content - App Mockup */}
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[400px]">
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff] via-[#b537ff] to-[#ff006e] opacity-25 blur-3xl"></div>
+          <div className="relative flex justify-center lg:justify-end items-center min-h-[600px]">
+            <div className="relative w-full max-w-[280px] lg:max-w-[300px]" style={{ 
+              transform: 'rotate(-8deg) translateY(-20px)',
+              transformOrigin: 'center center'
+            }}>
+              {/* Glow Effect Behind */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#00f0ff] via-[#b537ff] to-[#ff006e] opacity-30 blur-3xl" style={{ transform: 'scale(1.3)' }}></div>
               
               {/* Phone Frame */}
-              <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#12121a] border-2 border-[rgba(0,240,255,0.4)] rounded-[40px] p-4 shadow-2xl">
+              <div className="relative bg-gradient-to-br from-[#1a1a2e] to-[#12121a] border-[3px] border-[rgba(0,240,255,0.5)] rounded-[36px] p-3 shadow-2xl hover:scale-105 transition-transform duration-300" style={{
+                boxShadow: '0 25px 50px -12px rgba(0, 240, 255, 0.4), 0 0 30px rgba(181, 55, 255, 0.3)'
+              }}>
                 <img 
                   src="https://customer-assets.emergentagent.com/job_10c2b901-01a3-4304-be9a-6469e856b335/artifacts/csre6lct_IMG_7892.PNG" 
-                  alt="TickBoom App" 
-                  className="w-full rounded-[28px]"
+                  alt="TickBoom App Interface" 
+                  className="w-full rounded-[26px]"
+                  style={{ 
+                    imageRendering: 'crisp-edges',
+                    WebkitFontSmoothing: 'antialiased'
+                  }}
                 />
               </div>
 
-              {/* Floating Neon Elements */}
-              <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#00f0ff] opacity-20 blur-3xl rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-[#ff006e] opacity-20 blur-3xl rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-              <div className="absolute top-1/2 -right-12 w-24 h-24 bg-[#b537ff] opacity-20 blur-3xl rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+              {/* Floating Neon Elements - Adjusted for new position */}
+              <div className="absolute -top-12 -right-16 w-40 h-40 bg-[#00f0ff] opacity-20 blur-3xl rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-12 -left-16 w-48 h-48 bg-[#ff006e] opacity-20 blur-3xl rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute top-1/2 -right-20 w-32 h-32 bg-[#b537ff] opacity-20 blur-3xl rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
             </div>
           </div>
         </div>
