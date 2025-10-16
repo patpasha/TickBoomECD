@@ -87,6 +87,16 @@ const Footer = () => {
           ))}
         </div>
 
+        {/* Acquisition Notice */}
+        <div className="mb-8 p-6 bg-gradient-to-r from-[rgba(255,214,10,0.1)] to-[rgba(255,0,110,0.1)] border border-[rgba(255,214,10,0.3)] rounded-xl text-center">
+          <p className="text-[#8b8b9e] text-sm">
+            <span className="text-[#ffd60a] font-semibold">Interested in acquiring this app?</span> We're open to offers from serious buyers.{' '}
+            <a href="#" className="text-[#00f0ff] hover:text-[#b537ff] transition-colors underline">
+              Contact us
+            </a>
+          </p>
+        </div>
+
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[rgba(0,240,255,0.2)] flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#8b8b9e] text-sm">
