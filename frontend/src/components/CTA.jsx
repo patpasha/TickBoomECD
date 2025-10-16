@@ -79,14 +79,27 @@ const CTA = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
                       required
-                      className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-12 py-4 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl backdrop-blur-sm"
+                      disabled={loading}
+                      className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-12 py-4 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                   </div>
-                  <button type="submit" className="btn-primary whitespace-nowrap">
-                    Join Waitlist
-                    <ArrowRight size={20} />
+                  <button 
+                    type="submit" 
+                    disabled={loading}
+                    className="btn-primary whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {loading ? 'Joining...' : 'Join Waitlist'}
+                    {!loading && <ArrowRight size={20} />}
                   </button>
                 </div>
+                
+                {/* Error Message */}
+                {error && (
+                  <div className="mt-4 flex items-center justify-center gap-2 text-[#ff006e]">
+                    <AlertCircle size={20} />
+                    <span className="text-sm">{error}</span>
+                  </div>
+                )}
               </form>
             ) : (
               <div className="flex items-center justify-center gap-3 text-[#00f0ff] text-lg">
