@@ -59,11 +59,15 @@ const HowItWorks = () => {
               )}
 
               {/* Card */}
-              <div className="cyber-card p-8 h-full relative group">
+              <div className="cyber-card p-8 h-full relative group overflow-visible">
                 {/* Number Badge */}
                 <div 
-                  className="absolute -top-4 -right-4 w-16 h-16 flex items-center justify-center border-2 bg-[#0a0a0f] font-bold text-2xl rounded-lg shadow-lg"
-                  style={{ borderColor: step.color, color: step.color, boxShadow: `0 0 20px ${step.color}40` }}
+                  className="absolute -top-6 -right-6 w-20 h-20 flex items-center justify-center border-4 bg-[#0a0a0f] font-bold text-3xl rounded-xl shadow-2xl z-20"
+                  style={{ 
+                    borderColor: step.color, 
+                    color: step.color, 
+                    boxShadow: `0 0 30px ${step.color}60, inset 0 0 20px ${step.color}20` 
+                  }}
                 >
                   {step.number}
                 </div>
