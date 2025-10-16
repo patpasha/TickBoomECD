@@ -71,7 +71,7 @@ if not ALLOWED_ORIGINS or ALLOWED_ORIGINS == ['']:
     # Default for development - restrict in production
     ALLOWED_ORIGINS = [
         "http://localhost:3000",
-        "https://tickboom-app.preview.emergentagent.com"
+        "https://cyber-countdown.preview.emergentagent.com"
     ]
 
 app.add_middleware(
