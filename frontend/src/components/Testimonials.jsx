@@ -6,7 +6,6 @@ const Testimonials = () => {
     {
       name: 'Sarah M.',
       role: 'Software Engineer',
-      image: 'https://i.pravatar.cc/150?img=1',
       rating: 5,
       text: 'As someone with ADHD, this app is a game-changer. The countdown timers keep me accountable, and the "no mercy" approach actually works for me. Finally broke my procrastination habit!',
       highlight: 'Broke procrastination habit'
@@ -14,7 +13,6 @@ const Testimonials = () => {
     {
       name: 'Marcus T.',
       role: 'Entrepreneur',
-      image: 'https://i.pravatar.cc/150?img=12',
       rating: 5,
       text: 'I\'ve tried every productivity app out there. TickBoom is different - it doesn\'t let you make excuses. My 45-day streak on gym commitments proves it works.',
       highlight: '45-day gym streak'
@@ -22,7 +20,6 @@ const Testimonials = () => {
     {
       name: 'Emily R.',
       role: 'Product Designer',
-      image: 'https://i.pravatar.cc/150?img=5',
       rating: 5,
       text: 'The design is beautiful and the concept is brutal in the best way. Seeing my streak counter motivates me every single day. Worth every penny of the lifetime deal.',
       highlight: 'Lifetime user'
@@ -30,7 +27,6 @@ const Testimonials = () => {
     {
       name: 'Alex K.',
       role: 'Content Creator',
-      image: 'https://i.pravatar.cc/150?img=8',
       rating: 5,
       text: 'This app turned my creative block into consistent output. The analytics show me exactly how I\'m improving. It\'s like having a strict but fair coach in your pocket.',
       highlight: 'Consistent output achieved'
@@ -38,7 +34,6 @@ const Testimonials = () => {
     {
       name: 'Jordan P.',
       role: 'Student',
-      image: 'https://i.pravatar.cc/150?img=15',
       rating: 5,
       text: 'Perfect for ADHD minds like mine. Simple, focused, no distractions. The countdown creates just enough pressure to keep me on track without overwhelming me.',
       highlight: 'ADHD-friendly design'
@@ -46,7 +41,6 @@ const Testimonials = () => {
     {
       name: 'Rachel L.',
       role: 'Fitness Coach',
-      image: 'https://i.pravatar.cc/150?img=9',
       rating: 5,
       text: 'I recommend this to all my clients now. The streak system is addictive in a good way. My clients are hitting their goals faster than ever before.',
       highlight: 'Recommends to clients'
