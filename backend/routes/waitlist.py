@@ -113,9 +113,11 @@ async def get_all_subscribers(request: Request):
 
 
 @router.get("/export-csv")
-async def export_subscribers_csv():
+@limiter.limit("2/minute")  # Max 2 exports per minute per IP
+async def export_subscribers_csv(request: Request):
     """
     Export all subscribers as CSV
+    Rate limited: 2 requests per minute per IP (admin endpoint)
     """
     try:
         from fastapi.responses import StreamingResponse
