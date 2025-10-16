@@ -26,10 +26,10 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: <Twitter size={20} />, href: '#', label: 'Twitter' },
+    { icon: <Twitter size={20} />, href: 'https://x.com/TickBoomEvilCD', label: 'Twitter' },
     { icon: <Github size={20} />, href: '#', label: 'GitHub' },
     { icon: <Linkedin size={20} />, href: '#', label: 'LinkedIn' },
-    { icon: <Mail size={20} />, href: '#', label: 'Email' }
+    { icon: <Mail size={20} />, href: 'mailto:support@tickboom.app', label: 'Email' }
   ];
 
   return (
