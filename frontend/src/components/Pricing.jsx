@@ -20,27 +20,6 @@ const Pricing = () => {
       popular: false
     },
     {
-      name: 'Discipline',
-      price: '$3.99',
-      period: '/month',
-      description: 'For serious individuals ready to level up',
-      features: [
-        'Unlimited commitments',
-        'Up to 5 active commitments',
-        'Design timer customization',
-        'Detailed analytics & Insights',
-        'Streak tracking',
-        'Priority support',
-        'Custom notifications',
-        'Dark/Light theme variants',
-        'Exclusive beta features'
-      ],
-      color: '#00f0ff',
-      gradient: 'from-[#00f0ff] to-[#b537ff]',
-      cta: 'Go Premium',
-      popular: true
-    },
-    {
       name: 'Elite',
       price: '$29.99',
       period: '/year',
@@ -60,6 +39,27 @@ const Pricing = () => {
       color: '#b537ff',
       gradient: 'from-[#b537ff] to-[#ff006e]',
       cta: 'Go Elite',
+      popular: true
+    },
+    {
+      name: 'Discipline',
+      price: '$3.99',
+      period: '/month',
+      description: 'For serious individuals ready to level up',
+      features: [
+        'Unlimited commitments',
+        'Up to 5 active commitments',
+        'Design timer customization',
+        'Detailed analytics & Insights',
+        'Streak tracking',
+        'Priority support',
+        'Custom notifications',
+        'Dark/Light theme variants',
+        'Exclusive beta features'
+      ],
+      color: '#00f0ff',
+      gradient: 'from-[#00f0ff] to-[#b537ff]',
+      cta: 'Go Premium',
       popular: false
     }
   ];
