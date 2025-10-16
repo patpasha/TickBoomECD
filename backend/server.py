@@ -9,6 +9,7 @@ from pydantic import BaseModel, Field
 from typing import List
 import uuid
 from datetime import datetime
+from routes.waitlist import router as waitlist_router
 
 
 ROOT_DIR = Path(__file__).parent
