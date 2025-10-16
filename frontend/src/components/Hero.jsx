@@ -18,10 +18,15 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(181,55,255,0.15)] border border-[rgba(0,240,255,0.4)] rounded-full backdrop-blur-sm">
-              <Zap size={16} className="text-[#00f0ff]" />
-              <span className="text-[#00f0ff] text-sm font-semibold tracking-wide">Evil Countdown System</span>
+            {/* Badges */}
+            <div className="flex flex-wrap gap-3">
+              <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(181,55,255,0.15)] border border-[rgba(0,240,255,0.4)] rounded-full backdrop-blur-sm">
+                <Zap size={16} className="text-[#00f0ff]" />
+                <span className="text-[#00f0ff] text-sm font-semibold tracking-wide">Evil Countdown System</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(181,55,255,0.15)] to-[rgba(255,0,110,0.15)] border border-[rgba(181,55,255,0.4)] rounded-full backdrop-blur-sm">
+                <span className="text-[#b537ff] text-sm font-semibold tracking-wide">✨ ADHD-Friendly</span>
+              </div>
             </div>
 
             {/* Main Headline */}
