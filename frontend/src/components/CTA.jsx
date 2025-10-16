@@ -116,11 +116,11 @@ const CTA = () => {
                   <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Early Adopters</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#b537ff] mb-2">iOS Only</div>
-                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Coming Soon</div>
+                  <div className="text-3xl font-bold text-[#b537ff] mb-2">iOS</div>
+                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Available Soon</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#ff006e] mb-2">Q1 2025</div>
+                  <div className="text-3xl font-bold text-[#ff006e] mb-2">Q4 2025</div>
                   <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Launch Target</div>
                 </div>
               </div>
