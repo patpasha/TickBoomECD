@@ -16,13 +16,25 @@ db = client[os.environ.get('DB_NAME', 'tickboom')]
 
 
 @router.post("/subscribe", response_model=WaitlistEntry, status_code=status.HTTP_201_CREATED)
-async def subscribe_to_waitlist(data: WaitlistCreate):
+@limiter.limit("3/minute")  # Max 3 subscriptions per minute per IP
+async def subscribe_to_waitlist(request: Request, data: WaitlistCreate):
     """
     Subscribe an email to the waitlist
+    Rate limited to prevent spam: 3 requests per minute per IP
     """
     try:
+        # Strict email validation
+        if not validate_email_strict(data.email):
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Invalid email address format"
+            )
+        
+        # Normalize email (lowercase)
+        email = data.email.lower().strip()
+        
         # Check if email already exists
-        existing_entry = await db.waitlist.find_one({"email": data.email})
+        existing_entry = await db.waitlist.find_one({"email": email})
         
         if existing_entry:
             raise HTTPException(
@@ -31,12 +43,12 @@ async def subscribe_to_waitlist(data: WaitlistCreate):
             )
         
         # Create new entry
-        waitlist_entry = WaitlistEntry(email=data.email)
+        waitlist_entry = WaitlistEntry(email=email)
         
         # Save to database
         await db.waitlist.insert_one(waitlist_entry.dict())
         
-        logger.info(f"New waitlist subscription: {data.email}")
+        logger.info(f"New waitlist subscription: {email}")
         
         return waitlist_entry
         
