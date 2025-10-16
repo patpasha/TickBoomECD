@@ -13,6 +13,10 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
 import GDPR from './pages/GDPR';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Careers from './pages/Careers';
 
 const HomePage = () => {
   return (
