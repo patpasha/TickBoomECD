@@ -127,6 +127,11 @@ const Pricing = () => {
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <p className="text-[#8b8b9e] text-sm mb-6">{plan.description}</p>
                 <div className="flex items-end gap-2">
+                  {plan.originalPrice && (
+                    <span className="text-2xl text-[#8b8b9e] line-through mb-2">
+                      {plan.originalPrice}
+                    </span>
+                  )}
                   <span 
                     className="text-5xl font-bold"
                     style={{ color: plan.color }}
@@ -135,6 +140,11 @@ const Pricing = () => {
                   </span>
                   <span className="text-[#8b8b9e] text-lg mb-2">{plan.period}</span>
                 </div>
+                {plan.originalPrice && (
+                  <div className="mt-3 inline-flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-[rgba(255,214,10,0.2)] to-[rgba(255,0,110,0.2)] border border-[rgba(255,214,10,0.5)] rounded-full">
+                    <span className="text-[#ffd60a] text-sm font-bold">You save $17.89/year</span>
+                  </div>
+                )}
               </div>
 
               {/* Features List */}
