@@ -1,20 +1,43 @@
 import React, { useState } from 'react';
-import { ArrowRight, Mail, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Mail, CheckCircle2, AlertCircle } from 'lucide-react';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 const CTA = () => {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email) {
-      // In real app, this would call API
-      console.log('Waitlist signup:', email);
-      setSubmitted(true);
-      setTimeout(() => {
-        setEmail('');
-        setSubmitted(false);
-      }, 3000);
+    if (!email) return;
+
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await axios.post(`${BACKEND_URL}/api/waitlist/subscribe`, {
+        email: email
+      });
+
+      if (response.status === 201) {
+        setSubmitted(true);
+        setTimeout(() => {
+          setEmail('');
+          setSubmitted(false);
+        }, 5000);
+      }
+    } catch (err) {
+      if (err.response?.status === 409) {
+        setError('This email is already on the waitlist!');
+      } else {
+        setError('Something went wrong. Please try again.');
+      }
+      setTimeout(() => setError(''), 5000);
+    } finally {
+      setLoading(false);
     }
   };
 
