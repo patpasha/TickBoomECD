@@ -1,8 +1,9 @@
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Request
 from motor.motor_asyncio import AsyncIOMotorClient
 from models.waitlist import WaitlistEntry, WaitlistCreate
 import os
 import logging
+from security import limiter, validate_email_strict, sanitize_input
 
 logger = logging.getLogger(__name__)
 
