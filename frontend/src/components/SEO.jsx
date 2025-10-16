@@ -10,7 +10,8 @@ const SEO = ({
   type = 'website'
 }) => {
   // Use environment variable or fallback to current window location
-  const baseUrl = url || (typeof window !== 'undefined' ? window.location.origin : 'https://tickboom.app');
+  // In production, window.location.origin will automatically use the deployed domain
+  const baseUrl = url || (typeof window !== 'undefined' ? window.location.origin : process.env.REACT_APP_BASE_URL || window.location.origin);
   const ogImage = image || `${baseUrl}/og-image.png`;
   
   const structuredData = {
