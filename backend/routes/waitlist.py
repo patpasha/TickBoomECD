@@ -63,3 +63,75 @@ async def get_waitlist_count():
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Failed to get waitlist count"
         )
+
+
+@router.get("/all")
+async def get_all_subscribers():
+    """
+    Get all waitlist subscribers (for admin use)
+    Returns list of all emails with timestamps
+    """
+    try:
+        subscribers = await db.waitlist.find().sort("created_at", -1).to_list(10000)
+        
+        # Format response
+        result = []
+        for sub in subscribers:
+            result.append({
+                "email": sub.get("email"),
+                "created_at": sub.get("created_at"),
+                "source": sub.get("source", "landing_page")
+            })
+        
+        return {
+            "total": len(result),
+            "subscribers": result
+        }
+    except Exception as e:
+        logger.error(f"Error getting subscribers: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to get subscribers"
+        )
+
+
+@router.get("/export-csv")
+async def export_subscribers_csv():
+    """
+    Export all subscribers as CSV
+    """
+    try:
+        from fastapi.responses import StreamingResponse
+        import io
+        import csv
+        
+        subscribers = await db.waitlist.find().sort("created_at", -1).to_list(10000)
+        
+        # Create CSV in memory
+        output = io.StringIO()
+        writer = csv.writer(output)
+        
+        # Header
+        writer.writerow(['Email', 'Date', 'Source'])
+        
+        # Data
+        for sub in subscribers:
+            writer.writerow([
+                sub.get("email"),
+                sub.get("created_at").strftime("%Y-%m-%d %H:%M:%S") if sub.get("created_at") else "",
+                sub.get("source", "landing_page")
+            ])
+        
+        output.seek(0)
+        
+        return StreamingResponse(
+            iter([output.getvalue()]),
+            media_type="text/csv",
+            headers={"Content-Disposition": "attachment; filename=waitlist_subscribers.csv"}
+        )
+    except Exception as e:
+        logger.error(f"Error exporting CSV: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to export CSV"
+        )
