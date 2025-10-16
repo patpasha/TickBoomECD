@@ -89,6 +89,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+@app.middleware("http")
+async def add_security_headers_middleware(request: Request, call_next):
+    """
+    Add security headers to all responses
+    """
+    response = await call_next(request)
+    return add_security_headers(response)
+
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
