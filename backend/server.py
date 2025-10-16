@@ -9,13 +9,15 @@ from pydantic import BaseModel, Field
 from typing import List
 import uuid
 from datetime import datetime
+
+# Load environment variables FIRST before any imports that need them
+ROOT_DIR = Path(__file__).parent
+load_dotenv(ROOT_DIR / '.env')
+
+# Now import routes that depend on environment variables
 from routes.waitlist import router as waitlist_router
 from security import limiter, rate_limit_error_handler, add_security_headers
 from slowapi.errors import RateLimitExceeded
-
-
-ROOT_DIR = Path(__file__).parent
-load_dotenv(ROOT_DIR / '.env')
 
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
