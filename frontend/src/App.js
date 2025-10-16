@@ -9,6 +9,7 @@ import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import SEO from './components/SEO';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
@@ -21,6 +22,7 @@ import Careers from './pages/Careers';
 const HomePage = () => {
   return (
     <>
+      <SEO />
       <Header />
       <Hero />
       <Features />
