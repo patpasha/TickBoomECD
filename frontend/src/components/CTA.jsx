@@ -104,7 +104,7 @@ const CTA = () => {
             ) : (
               <div className="flex items-center justify-center gap-3 text-[#00f0ff] text-lg">
                 <CheckCircle2 size={24} />
-                <span className="font-semibold">You're on the list! Check your email.</span>
+                <span className="font-semibold">You're in! We'll send you early access as soon as we launch.</span>
               </div>
             )}
 
