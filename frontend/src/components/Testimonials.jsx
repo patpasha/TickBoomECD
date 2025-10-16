@@ -62,10 +62,10 @@ const Testimonials = () => {
             <span className="text-[#ffd60a] text-sm font-semibold tracking-wide">Beta Tester Reviews</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            What Our <span className="bg-gradient-to-r from-[#ffd60a] to-[#ff006e] bg-clip-text text-transparent">Early Adopters</span> Say
+            What <span className="bg-gradient-to-r from-[#ffd60a] to-[#ff006e] bg-clip-text text-transparent">People Love</span> About TickBoom
           </h2>
           <p className="text-xl text-[rgba(255,255,255,0.85)] max-w-3xl mx-auto">
-            Real feedback from real users who transformed their discipline with TickBoom.
+            Discover how TickBoom helps users build discipline and achieve their goals.
           </p>
         </div>
 
