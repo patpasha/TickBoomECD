@@ -68,16 +68,23 @@ app.include_router(waitlist_router)
 # Get allowed origins from environment or use default
 ALLOWED_ORIGINS = os.environ.get('ALLOWED_ORIGINS', '').split(',')
 if not ALLOWED_ORIGINS or ALLOWED_ORIGINS == ['']:
-    # Default for development - restrict in production
+    # Default for development and deployment - can be overridden via env
     ALLOWED_ORIGINS = [
         "http://localhost:3000",
-        "https://cyber-countdown.preview.emergentagent.com"
+        "https://cyber-countdown.preview.emergentagent.com",
+        # Pattern for Emergent production domains
+        "https://*.emergent.host",
+        "https://*.emergentagent.com"
     ]
+
+# If environment has specific origins, use them
+ALLOWED_ORIGINS = [origin.strip() for origin in ALLOWED_ORIGINS if origin.strip()]
 
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
     allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=r"https://.*\.emergent\.(host|com)$",  # Allow all Emergent subdomains
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "Authorization"],
 )
