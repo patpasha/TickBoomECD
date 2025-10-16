@@ -98,6 +98,20 @@ const Pricing = () => {
                 </div>
               )}
               
+              {/* Savings Badge for Elite */}
+              {plan.name === 'Elite' && (
+                <div 
+                  className="absolute -top-5 left-1/2 transform -translate-x-1/2 px-6 py-2 flex items-center gap-2 rounded-full font-bold shadow-lg whitespace-nowrap z-20 animate-pulse"
+                  style={{ 
+                    background: `linear-gradient(135deg, #ffd60a, #ff006e)`,
+                    color: '#000',
+                    boxShadow: `0 0 30px rgba(255, 214, 10, 0.6)`
+                  }}
+                >
+                  <span className="text-sm uppercase">💰 Save 37%</span>
+                </div>
+              )}
+              
               <div
                 className={`cyber-card p-8 h-full ${
                   plan.popular ? 'border-2' : ''
