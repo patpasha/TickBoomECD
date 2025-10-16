@@ -40,7 +40,7 @@ const Testimonials = () => {
     },
     {
       name: 'Rachel L.',
-      role: 'Fitness Coach',
+      role: 'Legal Consultant',
       rating: 5,
       text: 'During beta testing, I used it for my own goals and loved it. The commitment tracking is straightforward but powerful. It holds you accountable in a way other apps don\'t.',
       highlight: 'Beta Tester'
