@@ -25,6 +25,10 @@ db = client[os.environ['DB_NAME']]
 # Create the main app without a prefix
 app = FastAPI()
 
+# Add rate limiter to app
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, rate_limit_error_handler)
+
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
 
