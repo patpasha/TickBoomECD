@@ -5,10 +5,14 @@ const SEO = ({
   title = 'TickBoom: Evil Countdown - ADHD-Friendly Commitment Timer App',
   description = 'Transform procrastination into action with TickBoom. A neuroscience-backed countdown timer app designed for ADHD brains. Track commitments, build streaks, eliminate excuses. No coddling, just results.',
   keywords = 'ADHD app, countdown timer, commitment tracker, productivity app, habit tracker, ADHD productivity, time management, streak tracker, goal tracker, neuroscience app',
-  url = 'https://tickboom.app/',
-  image = 'https://tickboom.app/og-image.png',
+  url,
+  image,
   type = 'website'
 }) => {
+  // Use environment variable or fallback to current window location
+  const baseUrl = url || (typeof window !== 'undefined' ? window.location.origin : 'https://tickboom.app');
+  const ogImage = image || `${baseUrl}/og-image.png`;
+  
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -30,8 +34,8 @@ const SEO = ({
       "worstRating": "1"
     },
     "description": description,
-    "image": image,
-    "url": url,
+    "image": ogImage,
+    "url": baseUrl,
     "author": {
       "@type": "Organization",
       "name": "TickBoom"
@@ -48,20 +52,20 @@ const SEO = ({
       
       {/* Open Graph */}
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={baseUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={ogImage} />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={url} />
+      <meta name="twitter:url" content={baseUrl} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={ogImage} />
       
       {/* Canonical */}
-      <link rel="canonical" href={url} />
+      <link rel="canonical" href={baseUrl} />
       
       {/* Structured Data */}
       <script type="application/ld+json">
