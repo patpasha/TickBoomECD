@@ -7,43 +7,43 @@ const Testimonials = () => {
       name: 'Sarah M.',
       role: 'Software Engineer',
       rating: 5,
-      text: 'As someone with ADHD, this app is a game-changer. The countdown timers keep me accountable, and the "no mercy" approach actually works for me. Finally broke my procrastination habit!',
-      highlight: 'Broke procrastination habit'
+      text: 'Testing this app completely changed how I approach tasks. The countdown timers create the perfect amount of pressure. As someone with ADHD, I finally found something that works with my brain, not against it.',
+      highlight: 'Beta Tester'
     },
     {
       name: 'Marcus T.',
       role: 'Entrepreneur',
       rating: 5,
-      text: 'I\'ve tried every productivity app out there. TickBoom is different - it doesn\'t let you make excuses. My 45-day streak on gym commitments proves it works.',
-      highlight: '45-day gym streak'
+      text: 'Been beta testing for 3 weeks and I\'m impressed. The "no mercy" approach is exactly what I needed. No more moving deadlines or making excuses - just accountability and results.',
+      highlight: 'Beta Tester'
     },
     {
       name: 'Emily R.',
       role: 'Product Designer',
       rating: 5,
-      text: 'The design is beautiful and the concept is brutal in the best way. Seeing my streak counter motivates me every single day. Worth every penny of the lifetime deal.',
-      highlight: 'Lifetime user'
+      text: 'The design is sleek and the UX is incredibly thoughtful. During beta testing, I loved how the countdown creates urgency without causing anxiety. It\'s the right balance.',
+      highlight: 'Beta Tester'
     },
     {
       name: 'Alex K.',
       role: 'Content Creator',
       rating: 5,
-      text: 'This app turned my creative block into consistent output. The analytics show me exactly how I\'m improving. It\'s like having a strict but fair coach in your pocket.',
-      highlight: 'Consistent output achieved'
+      text: 'This beta helped me ship more content in a month than I did all quarter. The timer system makes commitments feel real. No fluff, just pure accountability.',
+      highlight: 'Beta Tester'
     },
     {
       name: 'Jordan P.',
       role: 'Student',
       rating: 5,
-      text: 'Perfect for ADHD minds like mine. Simple, focused, no distractions. The countdown creates just enough pressure to keep me on track without overwhelming me.',
-      highlight: 'ADHD-friendly design'
+      text: 'Perfect for ADHD minds like mine. The countdown creates just enough pressure to start tasks without overwhelming me. Simple, focused, and actually helps me follow through.',
+      highlight: 'Beta Tester'
     },
     {
       name: 'Rachel L.',
       role: 'Fitness Coach',
       rating: 5,
-      text: 'I recommend this to all my clients now. The streak system is addictive in a good way. My clients are hitting their goals faster than ever before.',
-      highlight: 'Recommends to clients'
+      text: 'During beta testing, I used it for my own goals and loved it. The commitment tracking is straightforward but powerful. It holds you accountable in a way other apps don\'t.',
+      highlight: 'Beta Tester'
     }
   ];
 
