@@ -1,4 +1,4 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, Request
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -10,6 +10,8 @@ from typing import List
 import uuid
 from datetime import datetime
 from routes.waitlist import router as waitlist_router
+from security import limiter, rate_limit_error_handler, add_security_headers
+from slowapi.errors import RateLimitExceeded
 
 
 ROOT_DIR = Path(__file__).parent
