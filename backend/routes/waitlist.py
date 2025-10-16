@@ -11,8 +11,17 @@ router = APIRouter(prefix="/api/waitlist", tags=["waitlist"])
 
 # MongoDB connection
 mongo_url = os.environ.get('MONGO_URL')
+if not mongo_url:
+    raise ValueError("MONGO_URL environment variable is not set")
+
 client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ.get('DB_NAME', 'tickboom')]
+
+# Get database name from environment, no fallback
+db_name = os.environ.get('DB_NAME')
+if not db_name:
+    raise ValueError("DB_NAME environment variable is not set")
+
+db = client[db_name]
 
 
 @router.post("/subscribe", response_model=WaitlistEntry, status_code=status.HTTP_201_CREATED)
