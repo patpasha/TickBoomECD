@@ -43,7 +43,7 @@ const CTA = () => {
 
   return (
     <section id="cta" className="relative py-24 px-6 lg:px-12 bg-[#12121a]">
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10">
         {/* Main CTA Card */}
         <div className="cyber-card p-12 lg:p-16 text-center relative overflow-hidden">
           {/* Background Glow */}
@@ -51,8 +51,8 @@ const CTA = () => {
 
           <div className="relative z-10">
             {/* Badge */}
-            <div className="inline-block px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(181,55,255,0.15)] border border-[rgba(0,240,255,0.4)] rounded-full mb-6">
-              <span className="text-[#00f0ff] text-sm font-semibold tracking-wide">Coming Soon</span>
+            <div className="inline-block px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(255,214,10,0.15)] border border-[rgba(0,240,255,0.5)] rounded-full mb-6 animate-pulse">
+              <span className="text-[#00f0ff] text-sm font-bold tracking-wide">🎉 Now Available!</span>
             </div>
 
             {/* Heading */}
@@ -63,65 +63,97 @@ const CTA = () => {
             </h2>
 
             {/* Description */}
-            <p className="text-xl text-[rgba(255,255,255,0.85)] mb-12 max-w-2xl mx-auto">
-              Join the waitlist and be among the first to experience the most disciplined productivity app ever created.
+            <p className="text-xl text-[rgba(255,255,255,0.85)] mb-8 max-w-2xl mx-auto">
+              Download TickBoom now and start transforming your commitments into reality. Available on the App Store.
             </p>
 
-            {/* Email Form */}
-            {!submitted ? (
-              <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <div className="flex-1 relative">
-                    <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#8b8b9e]" size={20} />
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
-                      required
+            {/* App Store Button - Primary CTA */}
+            <div className="mb-12">
+              <a 
+                href="https://apps.apple.com/ca/app/tickboom-evil-countdown-timer/id6751061434?l=fr-CA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-[#00f0ff] via-[#b537ff] to-[#ff006e] text-white text-lg font-bold uppercase tracking-wider rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+                style={{
+                  boxShadow: '0 10px 40px rgba(0, 240, 255, 0.4)'
+                }}
+              >
+                Download on App Store
+                <ArrowRight size={24} />
+              </a>
+            </div>
+
+            {/* Separator */}
+            <div className="flex items-center gap-4 max-w-md mx-auto mb-8">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent to-[rgba(0,240,255,0.3)]"></div>
+              <span className="text-[#8b8b9e] text-sm">or</span>
+              <div className="flex-1 h-px bg-gradient-to-l from-transparent to-[rgba(0,240,255,0.3)]"></div>
+            </div>
+
+            {/* Secondary: Get Updates Form */}
+            <div className="max-w-2xl mx-auto">
+              <h3 className="text-xl font-bold mb-4 text-[rgba(255,255,255,0.9)]">
+                Stay Updated on New Features
+              </h3>
+              <p className="text-[rgba(255,255,255,0.7)] mb-6 text-sm">
+                Get notified about major updates, new features, and exclusive offers.
+              </p>
+
+              {!submitted ? (
+                <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex-1 relative">
+                      <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#8b8b9e]" size={20} />
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Enter your email"
+                        required
+                        disabled={loading}
+                        className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-12 py-4 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                      />
+                    </div>
+                    <button 
+                      type="submit" 
                       disabled={loading}
-                      className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-12 py-4 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
-                    />
+                      className="btn-secondary whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {loading ? 'Subscribing...' : 'Get Updates'}
+                      {!loading && <ArrowRight size={20} />}
+                    </button>
                   </div>
-                  <button 
-                    type="submit" 
-                    disabled={loading}
-                    className="btn-primary whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {loading ? 'Joining...' : 'Join Waitlist'}
-                    {!loading && <ArrowRight size={20} />}
-                  </button>
+                  
+                  {/* Error Message */}
+                  {error && (
+                    <div className="mt-4 flex items-center justify-center gap-2 text-[#ff006e]">
+                      <AlertCircle size={20} />
+                      <span className="text-sm">{error}</span>
+                    </div>
+                  )}
+                </form>
+              ) : (
+                <div className="flex items-center justify-center gap-3 text-[#00f0ff] text-lg">
+                  <CheckCircle2 size={24} />
+                  <span className="font-semibold">Thanks! You'll be notified about updates and new features.</span>
                 </div>
-                
-                {/* Error Message */}
-                {error && (
-                  <div className="mt-4 flex items-center justify-center gap-2 text-[#ff006e]">
-                    <AlertCircle size={20} />
-                    <span className="text-sm">{error}</span>
-                  </div>
-                )}
-              </form>
-            ) : (
-              <div className="flex items-center justify-center gap-3 text-[#00f0ff] text-lg">
-                <CheckCircle2 size={24} />
-                <span className="font-semibold">You're in! We'll send you early access as soon as we launch.</span>
-              </div>
-            )}
+              )}
+            </div>
 
             {/* Trust Indicators */}
             <div className="mt-12 pt-12 border-t border-[rgba(0,240,255,0.2)]">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-[#00f0ff] mb-2">100+</div>
-                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Early Adopters</div>
+                  <div className="text-3xl font-bold text-[#00f0ff] mb-2">500+</div>
+                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Active Users</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-[#b537ff] mb-2">iOS</div>
-                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Available Soon</div>
+                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Available Now</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#ff006e] mb-2">Q4 2025</div>
-                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Launch Target</div>
+                  <div className="text-3xl font-bold text-[#ff006e] mb-2">4.8★</div>
+                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">App Rating</div>
                 </div>
               </div>
             </div>
