@@ -31,7 +31,7 @@ const CTA = () => {
       }
     } catch (err) {
       if (err.response?.status === 409) {
-        setError('This email is already on the waitlist!');
+        setError('This email is already subscribed to updates!');
       } else {
         setError('Something went wrong. Please try again.');
       }
