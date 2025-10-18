@@ -47,18 +47,23 @@ const Hero = () => {
             </p>
 
             {/* Release Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(181,55,255,0.15)] to-[rgba(0,240,255,0.15)] border border-[rgba(181,55,255,0.4)] rounded-full backdrop-blur-sm mb-4">
-              <span className="text-[#b537ff] text-sm font-semibold">TestFlight Beta Closed - Available soon on App Store</span>
+            <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(255,214,10,0.15)] border border-[rgba(0,240,255,0.5)] rounded-full backdrop-blur-sm mb-4 animate-pulse">
+              <span className="text-[#00f0ff] text-sm font-bold">🎉 Available Now on App Store!</span>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button onClick={scrollToCTA} className="btn-primary">
-                Join Waitlist
+              <a 
+                href="https://apps.apple.com/ca/app/tickboom-evil-countdown-timer/id6751061434?l=fr-CA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center justify-center gap-2"
+              >
+                Download on App Store
                 <ArrowRight size={20} />
-              </button>
-              <button onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })} className="btn-secondary">
-                See How It Works
+              </a>
+              <button onClick={scrollToCTA} className="btn-secondary">
+                Get Updates
               </button>
             </div>
 
