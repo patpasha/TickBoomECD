@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-6 lg:px-12 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-12 px-6 lg:px-12 overflow-hidden">
       {/* Background Effects */}
       <div className="cyberpunk-bg"></div>
 
