@@ -2,13 +2,6 @@ import React from 'react';
 import { ArrowRight, Zap } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToCTA = () => {
-    const element = document.getElementById('cta');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-32 pb-12 px-6 lg:px-12 overflow-hidden">
       {/* Background Effects */}
