@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const SEO = ({ 
-  title = 'TickBoom: Countdown Timer & Task Tracker for ADHD | Focus & Commitment App',
-  description = 'Transform procrastination into action with TickBoom. A neuroscience-backed countdown timer app designed for ADHD brains. Track commitments, build streaks, eliminate excuses. No coddling, just results.',
-  keywords = 'ADHD app, countdown timer, commitment tracker, productivity app, habit tracker, ADHD productivity, time management, streak tracker, goal tracker, neuroscience app, task timer, focus app',
+  title = 'TickBoom: Focus Timer, Task Tracker & Commitment App | ADHD-Friendly',
+  description = 'Turn chaos into action with TickBoom. Countdown timers that force a choice: Do or don\'t. Designed for everyone tired of excuses, optimized for ADHD brains, procrastinator-proof.',
+  keywords = 'focus timer, task tracker, commitment app, ADHD app, countdown timer, productivity app, habit tracker, ADHD productivity, time management, accountability app, procrastination app, streak tracker',
   url,
   image,
   type = 'website'
