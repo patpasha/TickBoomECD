@@ -62,8 +62,8 @@ const Hero = () => {
                 Download on App Store
                 <ArrowRight size={20} />
               </a>
-              <button onClick={scrollToCTA} className="btn-secondary">
-                Get Updates
+              <button onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })} className="btn-secondary">
+                See How It Works
               </button>
             </div>
 
