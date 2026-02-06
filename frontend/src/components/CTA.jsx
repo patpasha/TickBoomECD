@@ -68,7 +68,7 @@ const CTA = () => {
             </p>
 
             {/* App Store Button - Primary CTA */}
-            <div className="mb-12">
+            <div className="mb-8">
               <a 
                 href="https://apps.apple.com/ca/app/tickboom-evil-countdown-timer/id6751061434?l=fr-CA"
                 target="_blank"
@@ -81,63 +81,6 @@ const CTA = () => {
                 Download on App Store
                 <ArrowRight size={24} />
               </a>
-            </div>
-
-            {/* Separator */}
-            <div className="flex items-center gap-4 max-w-md mx-auto mb-8">
-              <div className="flex-1 h-px bg-gradient-to-r from-transparent to-[rgba(0,240,255,0.3)]"></div>
-              <span className="text-[#8b8b9e] text-sm">or</span>
-              <div className="flex-1 h-px bg-gradient-to-l from-transparent to-[rgba(0,240,255,0.3)]"></div>
-            </div>
-
-            {/* Secondary: Get Updates Form */}
-            <div className="max-w-2xl mx-auto">
-              <h3 className="text-xl font-bold mb-4 text-[rgba(255,255,255,0.9)]">
-                Stay Updated on New Features
-              </h3>
-              <p className="text-[rgba(255,255,255,0.7)] mb-6 text-sm">
-                Get notified about major updates, new features, and exclusive offers.
-              </p>
-
-              {!submitted ? (
-                <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="flex-1 relative">
-                      <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#8b8b9e]" size={20} />
-                      <input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Enter your email"
-                        required
-                        disabled={loading}
-                        className="w-full bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(0,240,255,0.3)] px-12 py-4 text-white placeholder-[#8b8b9e] focus:outline-none focus:border-[#00f0ff] transition-colors rounded-xl backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed"
-                      />
-                    </div>
-                    <button 
-                      type="submit" 
-                      disabled={loading}
-                      className="btn-secondary whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      {loading ? 'Subscribing...' : 'Get Updates'}
-                      {!loading && <ArrowRight size={20} />}
-                    </button>
-                  </div>
-                  
-                  {/* Error Message */}
-                  {error && (
-                    <div className="mt-4 flex items-center justify-center gap-2 text-[#ff006e]">
-                      <AlertCircle size={20} />
-                      <span className="text-sm">{error}</span>
-                    </div>
-                  )}
-                </form>
-              ) : (
-                <div className="flex items-center justify-center gap-3 text-[#00f0ff] text-lg">
-                  <CheckCircle2 size={24} />
-                  <span className="font-semibold">Thanks! You'll be notified about updates and new features.</span>
-                </div>
-              )}
             </div>
 
             {/* Trust Indicators */}
