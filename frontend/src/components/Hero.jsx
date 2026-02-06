@@ -98,7 +98,7 @@ const Hero = () => {
                 boxShadow: '0 25px 50px -12px rgba(0, 240, 255, 0.4), 0 0 30px rgba(181, 55, 255, 0.3)'
               }}>
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_10c2b901-01a3-4304-be9a-6469e856b335/artifacts/csre6lct_IMG_7892.PNG" 
+                  src="https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/tjesj6k9_IMG_8422.PNG" 
                   alt="TickBoom App Interface" 
                   className="w-full rounded-[26px]"
                   style={{ 
