@@ -24,19 +24,16 @@ const Hero = () => {
 
             {/* Main Headline */}
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-              Transform Your
+              Turn Chaos Into Your
               <br />
               <span className="bg-gradient-to-r from-[#00f0ff] via-[#b537ff] to-[#ff006e] bg-clip-text text-transparent">
-                Resolutions
+                Productivity Superpower
               </span>
-              <br />
-              Into Reality
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl lg:text-2xl text-[rgba(255,255,255,0.85)] leading-relaxed">
-              A ruthlessly effective productivity app that turns commitments into discipline. ADHD-friendly design for better focus.
-              <span className="text-[#ff006e] font-semibold"> No excuses. No mercy.</span>
+              TickBoom turns chaos into action with countdown timers that force a choice: <span className="text-white font-semibold">Do or don't.</span> Designed for everyone who's tired of their own excuses, optimized for ADHD brains, procrastinator-proof.
             </p>
 
             {/* Release Badge */}
