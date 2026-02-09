@@ -204,7 +204,7 @@ const Pricing = () => {
               </div>
               
               <p className="text-base text-[rgba(255,255,255,0.9)] font-semibold">
-                <span className="text-[#ffd60a]">⚡ Only a few spots left</span> — grab your lifetime pass!
+                <span className="text-[#ffd60a]">⚡ Only a few spots available</span> — grab your lifetime pass!
               </p>
             </div>
           </div>
