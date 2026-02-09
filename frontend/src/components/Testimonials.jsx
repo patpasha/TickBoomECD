@@ -121,7 +121,7 @@ const Testimonials = () => {
             onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-primary"
           >
-            Join The Waitlist
+            Join The Move
           </button>
         </div>
       </div>
