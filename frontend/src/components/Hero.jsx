@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
               The task timer
               <br />
               <span className="bg-gradient-to-r from-[#00f0ff] via-[#b537ff] to-[#ff006e] bg-clip-text text-transparent">
