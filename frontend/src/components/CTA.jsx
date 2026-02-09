@@ -48,15 +48,15 @@ const CTA = () => {
             <div className="mt-12 pt-12 border-t border-[rgba(0,240,255,0.2)]">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-[#00f0ff] mb-2">500+</div>
-                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Active Users</div>
+                  <div className="text-3xl font-bold text-[#00f0ff] mb-2">2.5K+</div>
+                  <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Commitments Tracked</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-[#b537ff] mb-2">iOS</div>
                   <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">Available Now</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#ff006e] mb-2">4.8★</div>
+                  <div className="text-3xl font-bold text-[#ff006e] mb-2">5★</div>
                   <div className="text-sm text-[#8b8b9e] uppercase tracking-wider">App Rating</div>
                 </div>
               </div>
