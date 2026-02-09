@@ -9,7 +9,7 @@ const Pricing = () => {
       period: 'Forever',
       description: 'Perfect for getting started with commitment tracking',
       features: [
-        'Up to 10 commitments',
+        'Up to 30 commitments',
         'Up to 2 active commitments',
         'Basic countdown timers',
         'Streak countdown',
@@ -24,7 +24,7 @@ const Pricing = () => {
       price: '$29.99',
       period: '/year',
       description: 'Annual billing - Save 37% compared to monthly',
-      discount: 'Save $17.89/year',
+      discount: 'Save $17.89/year • 7-day free trial',
       features: [
         'Unlimited commitments',
         'Up to 5 active commitments',
