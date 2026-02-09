@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-3">
               <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(181,55,255,0.15)] border border-[rgba(0,240,255,0.4)] rounded-full backdrop-blur-sm">
                 <Zap size={16} className="text-[#00f0ff]" />
-                <span className="text-[#00f0ff] text-sm font-semibold tracking-wide">Evil Countdown System</span>
+                <span className="text-[#00f0ff] text-sm font-semibold tracking-wide">The Do or Don't App</span>
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(181,55,255,0.15)] to-[rgba(255,0,110,0.15)] border border-[rgba(181,55,255,0.4)] rounded-full backdrop-blur-sm">
                 <span className="text-[#b537ff] text-sm font-semibold tracking-wide">✨ ADHD-Friendly</span>
@@ -24,16 +24,16 @@ const Hero = () => {
 
             {/* Main Headline */}
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-              Turn Chaos Into Your
+              The accountability timer
               <br />
               <span className="bg-gradient-to-r from-[#00f0ff] via-[#b537ff] to-[#ff006e] bg-clip-text text-transparent">
-                Productivity Superpower
+                built for Real Life
               </span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl lg:text-2xl text-[rgba(255,255,255,0.85)] leading-relaxed">
-              TickBoom turns chaos into action with countdown timers that force a choice: <span className="text-white font-semibold">Do or don't.</span> Designed for everyone who's tired of their own excuses, optimized for ADHD brains, procrastinator-proof.
+              TickBoom turns your chaos into superpower. Designed for those tired of excuses, optimized for ADHD brains, procrastinator-proof.
             </p>
 
             {/* Release Badge */}
