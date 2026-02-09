@@ -13,7 +13,7 @@ const Features = () => {
     {
       icon: <Flame size={32} />,
       title: 'Streak System',
-      description: 'Build unstoppable momentum with daily streaks. Break the chain, face the consequences.',
+      description: 'Build unstoppable momentum with daily streaks. Every day completed strengthens your discipline.',
       color: '#ff006e',
       gradient: 'from-[#ff006e] to-[#ffd60a]'
     },
