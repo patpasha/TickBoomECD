@@ -36,11 +36,6 @@ const Hero = () => {
               TickBoom turns your chaos into superpower. Designed for those tired of excuses, optimized for ADHD brains, procrastinator-proof.
             </p>
 
-            {/* Release Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-3 bg-gradient-to-r from-[rgba(0,240,255,0.15)] to-[rgba(255,214,10,0.15)] border border-[rgba(0,240,255,0.5)] rounded-full backdrop-blur-sm mb-4 animate-pulse">
-              <span className="text-[#00f0ff] text-sm font-bold">🎉 Available Now on App Store!</span>
-            </div>
-
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a 
