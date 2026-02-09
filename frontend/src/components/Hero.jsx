@@ -27,7 +27,7 @@ const Hero = () => {
               The task timer
               <br />
               <span className="bg-gradient-to-r from-[#00f0ff] via-[#b537ff] to-[#ff006e] bg-clip-text text-transparent">
-                built for Real Life
+                built for real life
               </span>
             </h1>
 
