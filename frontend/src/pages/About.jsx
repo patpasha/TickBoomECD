@@ -121,23 +121,28 @@ const About = () => {
           </section>
 
           <section className="cyber-card p-8">
-            <h2 className="text-2xl font-bold mb-4">Current Status</h2>
+            <h2 className="text-2xl font-bold mb-4">Available Now</h2>
             <p className="text-[rgba(255,255,255,0.85)] leading-relaxed">
-              We're currently in beta testing with 100+ early adopters who are helping us refine the experience. The iOS version is coming soon to the App Store, with a target launch in Q4 2025.
+              TickBoom is now live on the App Store! Join thousands of users who are transforming chaos into productivity superpowers. Our iOS app has already helped track over 2,500 commitments and continues to grow every day.
             </p>
             <p className="text-[rgba(255,255,255,0.85)] leading-relaxed mt-4">
-              Join our waitlist to be among the first to experience TickBoom when we launch.
+              Download now and experience the "Do or Don't" approach with a 7-day free trial on our Elite plan. No credit card required to start.
             </p>
           </section>
 
           <section className="cyber-card p-8 bg-gradient-to-br from-[rgba(0,240,255,0.05)] to-[rgba(181,55,255,0.05)]">
-            <h2 className="text-2xl font-bold mb-4">Join Us</h2>
+            <h2 className="text-2xl font-bold mb-4">Ready to Transform Your Productivity?</h2>
             <p className="text-[rgba(255,255,255,0.85)] leading-relaxed mb-6">
               Whether you're someone with ADHD looking for an app that works with your brain, or anyone who's tired of making excuses and ready to build real discipline - TickBoom is for you.
             </p>
-            <Link to="/" className="btn-primary">
-              Join the Waitlist
-            </Link>
+            <a 
+              href="https://apps.apple.com/ca/app/tickboom-evil-countdown-timer/id6751061434?l=fr-CA" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Download on App Store
+            </a>
           </section>
         </div>
       </div>
