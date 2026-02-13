@@ -23,7 +23,7 @@ const FAQ = () => {
     },
     {
       question: "What happens if I don't complete a task before the timer ends?",
-      answer: "Your streak breaks and the task is marked as incomplete in your history. We track your completion rate so you can see patterns. No punishment—just honest accountability. Every abandoned task is a learning opportunity to build better habits."
+      answer: "The task is marked as incomplete in your history. Your streak only breaks if you fail to complete at least one commitment in a day or don't connect to the app. So one failed task won't ruin your progress—you can still save your streak by completing another commitment that same day. We track your completion rate so you can see patterns. No punishment—just honest accountability. Every abandoned task is a learning opportunity to build better habits."
     },
     {
       question: "Can I pause or extend timers?",
