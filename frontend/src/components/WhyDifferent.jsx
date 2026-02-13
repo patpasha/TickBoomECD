@@ -68,7 +68,7 @@ const WhyDifferent = () => {
               <p className="text-lg text-[rgba(255,255,255,0.85)] leading-relaxed">
                 Other apps: <span className="text-[#8b8b9e]">"No worries! Snooze it for tomorrow 😊"</span>
                 <br />
-                <span className="text-[#00f0ff] font-semibold">TickBoom:</span> <span className="text-white font-semibold">"Task abandoned. Your progress is tracked. Time to reflect and improve."</span>
+                <span className="text-[#00f0ff] font-semibold">TickBoom:</span> <span className="text-white font-semibold">"Task abandoned. Your stats don't lie. Data recorded."</span>
               </p>
             </div>
           </div>
