@@ -21,10 +21,10 @@ const Pricing = () => {
     },
     {
       name: 'Elite',
-      price: '$29.99',
+      price: '$34.99',
       period: '/year',
-      description: 'Annual billing - Save 37% compared to monthly',
-      discount: 'Save $17.89/year • 7-day free trial',
+      description: 'Annual billing - Save 58% compared to monthly',
+      discount: 'Save $48.89/year • 7-day free trial',
       features: [
         'Unlimited commitments',
         'Up to 5 active commitments',
@@ -43,7 +43,7 @@ const Pricing = () => {
     },
     {
       name: 'Discipline',
-      price: '$3.99',
+      price: '$6.99',
       period: '/month',
       description: 'For serious individuals ready to level up',
       features: [
