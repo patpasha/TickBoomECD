@@ -27,7 +27,7 @@ const FAQ = () => {
     },
     {
       question: "Can I pause or extend timers?",
-      answer: "No pause button—that's the point. Real life doesn't have a pause button. However, life happens. You get 3 'replan' jokers per week to reschedule a task, and 3 'grace period' extensions per week to add extra time when you really need it. These limited lifelines keep you accountable while acknowledging that flexibility is sometimes necessary. Use them wisely."
+      answer: "No pause button—that's the point. TickBoom creates the same pressure as real deadlines. If you set a commitment, you commit. This is what makes TickBoom effective where other apps fail. However, life happens. You get 3 'replan' jokers per week to reschedule a task, and 3 'grace period' extensions per week to add extra time when you really need it. These limited lifelines maintain accountability while acknowledging that flexibility is sometimes necessary. Use them wisely."
     },
     {
       question: "How does the streak system work?",
