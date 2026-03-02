@@ -102,6 +102,33 @@ const HowItWorks = () => {
           ))}
         </div>
 
+        {/* Visual Flow - Screenshots */}
+        <div className="mt-24 grid grid-cols-2 lg:grid-cols-4 gap-6">
+          {steps.map((step, index) => (
+            <div key={index} className="group">
+              {/* Screenshot Container */}
+              <div className="relative rounded-2xl overflow-hidden border-2 transition-all duration-300 hover:scale-105"
+                style={{ borderColor: step.color }}
+              >
+                <img 
+                  src={step.screenshot} 
+                  alt={`${step.title} - TickBoom App`}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+                {/* Overlay with step number */}
+                <div className="absolute top-4 left-4 w-10 h-10 rounded-lg flex items-center justify-center font-bold text-white bg-black bg-opacity-60 backdrop-blur-sm">
+                  {step.number}
+                </div>
+              </div>
+              {/* Label */}
+              <p className="text-center mt-3 font-semibold text-sm" style={{ color: step.color }}>
+                {step.title}
+              </p>
+            </div>
+          ))}
+        </div>
+
         {/* Philosophy Section */}
         <div className="mt-24 cyber-card p-12 text-center relative overflow-hidden">
           <div className="relative z-10">
