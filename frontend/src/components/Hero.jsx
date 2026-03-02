@@ -83,8 +83,8 @@ const Hero = () => {
                 boxShadow: '0 25px 50px -12px rgba(0, 240, 255, 0.4), 0 0 30px rgba(181, 55, 255, 0.3)'
               }}>
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/tjesj6k9_IMG_8422.PNG" 
-                  alt="TickBoom App Interface" 
+                  src="https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/f2l7wkkb_IMG_8830.PNG" 
+                  alt="TickBoom App Interface - Task Timer with Countdown" 
                   className="w-full rounded-[26px]"
                   style={{ 
                     imageRendering: 'crisp-edges',
