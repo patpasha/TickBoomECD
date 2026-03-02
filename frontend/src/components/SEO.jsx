@@ -112,6 +112,11 @@ const SEO = ({
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
+      
+      {/* FAQ Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
     </Helmet>
   );
 };
