@@ -4,7 +4,7 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      text: "I've tried every productivity app out there. They all let me hit snooze forever. TickBoom's countdown timers don't lie—either I finish my essay or I don't. My grades went from C average to making Dean's List in one semester. First app that actually works with my ADHD brain.",
+      text: "I\'ve tried every productivity app out there. They all let me hit snooze forever. TickBoom\'s countdown timers don\'t lie—either I finish my essay or I don\'t. My grades went from C average to making Dean\'s List in one semester. First app that actually works with my ADHD brain.",
       author: 'Sarah M.',
       role: 'University Student',
       metrics: ['C average → Dean\'s List', '47 assignments on time', '21-day study streak']
