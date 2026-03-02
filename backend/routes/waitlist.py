@@ -126,37 +126,45 @@ async def get_all_subscribers(request: Request, limit: int = 100, skip: int = 0)
 
 @router.get("/export-csv")
 @limiter.limit("2/minute")  # Max 2 exports per minute per IP
-async def export_subscribers_csv(request: Request):
+async def export_subscribers_csv(request: Request, limit: int = 1000):
     """
-    Export all subscribers as CSV
+    Export subscribers as CSV with streaming to prevent memory issues
     Rate limited: 2 requests per minute per IP (admin endpoint)
+    
+    Args:
+        limit: Maximum number of subscribers to export (default: 1000, max: 5000)
     """
     try:
         from fastapi.responses import StreamingResponse
         import io
         import csv
         
-        subscribers = await db.waitlist.find().sort("created_at", -1).to_list(10000)
+        # Enforce maximum limit
+        limit = min(limit, 5000)
         
-        # Create CSV in memory
-        output = io.StringIO()
-        writer = csv.writer(output)
-        
-        # Header
-        writer.writerow(['Email', 'Date', 'Source'])
-        
-        # Data
-        for sub in subscribers:
-            writer.writerow([
-                sub.get("email"),
-                sub.get("created_at").strftime("%Y-%m-%d %H:%M:%S") if sub.get("created_at") else "",
-                sub.get("source", "landing_page")
-            ])
-        
-        output.seek(0)
+        async def generate_csv():
+            # Create CSV header
+            output = io.StringIO()
+            writer = csv.writer(output)
+            writer.writerow(['Email', 'Date', 'Source'])
+            yield output.getvalue()
+            output.truncate(0)
+            output.seek(0)
+            
+            # Stream data row by row using cursor
+            cursor = db.waitlist.find().sort("created_at", -1).limit(limit)
+            async for sub in cursor:
+                writer.writerow([
+                    sub.get("email"),
+                    sub.get("created_at").strftime("%Y-%m-%d %H:%M:%S") if sub.get("created_at") else "",
+                    sub.get("source", "landing_page")
+                ])
+                yield output.getvalue()
+                output.truncate(0)
+                output.seek(0)
         
         return StreamingResponse(
-            iter([output.getvalue()]),
+            generate_csv(),
             media_type="text/csv",
             headers={"Content-Disposition": "attachment; filename=waitlist_subscribers.csv"}
         )
