@@ -4,46 +4,40 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Sarah M.',
-      role: 'Software Engineer',
-      rating: 5,
-      text: 'Testing this app completely changed how I approach tasks. The countdown timers create the perfect amount of pressure. As someone with ADHD, I finally found something that works with my brain, not against it.',
-      highlight: 'Beta Tester'
+      text: "I've tried every productivity app out there. They all let me hit snooze forever. TickBoom's countdown timers don't lie—either I finish my essay or I don't. My grades went from C average to making Dean's List in one semester. First app that actually works with my ADHD brain.",
+      author: 'Sarah M.',
+      role: 'University Student',
+      metrics: ['C average → Dean's List', '47 assignments on time', '21-day study streak']
     },
     {
-      name: 'Marcus T.',
-      role: 'Entrepreneur',
-      rating: 5,
-      text: 'Been beta testing for 3 weeks and I\'m impressed. The "no mercy" approach is exactly what I needed. No more moving deadlines or making excuses - just accountability and results.',
-      highlight: 'Beta Tester'
+      text: "Running a startup with ADHD is chaos. I had 50 unfinished projects and investors breathing down my neck. TickBoom forced me to commit: launch MVP in 30 days or face the data. Brutal? Yes. Effective? I shipped in 28 days. This isn't a todo app—it's a commitment machine.",
+      author: 'Marcus T.',
+      role: 'Startup Founder',
+      metrics: ['MVP shipped in 28 days', 'Closed $500K seed round', 'Team uses TickBoom']
     },
     {
-      name: 'Emily R.',
-      role: 'Product Designer',
-      rating: 5,
-      text: 'The design is sleek and the UX is incredibly thoughtful. During beta testing, I loved how the countdown creates urgency without causing anxiety. It\'s the right balance.',
-      highlight: 'Beta Tester'
+      text: "I'm a creative with zero follow-through. Every week I'd start a new portfolio project and abandon it by Thursday. The streak system changed everything. I've finished more client projects in 2 months than I did all last year.",
+      author: 'Alex R.',
+      role: 'Graphic Designer',
+      metrics: ['12 projects completed', '60-day active streak', 'Doubled freelance income']
     },
     {
-      name: 'Alex K.',
-      role: 'Content Creator',
-      rating: 5,
-      text: 'This beta helped me ship more content in a month than I did all quarter. The timer system makes commitments feel real. No fluff, just pure accountability.',
-      highlight: 'Beta Tester'
+      text: "Between 2 kids, a full-time job, and trying to exercise, I felt like I was failing at everything. TickBoom helped me commit to the bare minimum. The stats proved I wasn't failing—I was completing 85% of my commitments. That visible proof kept me going when mom guilt kicked in.",
+      author: 'Jennifer K.',
+      role: 'Working Mom',
+      metrics: ['85% completion rate', 'Lost 15 lbs in 3 months', 'Promoted at work']
     },
     {
-      name: 'Jordan P.',
-      role: 'Student',
-      rating: 5,
-      text: 'Perfect for ADHD minds like mine. The countdown creates just enough pressure to start tasks without overwhelming me. Simple, focused, and actually helps me follow through.',
-      highlight: 'Beta Tester'
+      text: "I work in sprints but always blow past deadlines. The countdown timers gave me the same adrenaline as a looming deployment—but every day. First sprint I finished early in 3 years. My manager noticed. My stress levels dropped.",
+      author: 'David L.',
+      role: 'Software Developer',
+      metrics: ['Zero overtime', 'Stress dropped 50%', 'Finished 2 days early']
     },
     {
-      name: 'Rachel L.',
-      role: 'Legal Consultant',
-      rating: 5,
-      text: 'During beta testing, I used it for my own goals and loved it. The commitment tracking is straightforward but powerful. It holds you accountable in a way other apps don\'t.',
-      highlight: 'Beta Tester'
+      text: "I've had a gym membership for 4 years. Went maybe 10 times total. With TickBoom, I committed to 30-minute workouts every other day. 8 weeks later, I ran my first 5K. The app didn't coddle me into fitness—it forced me to show up.",
+      author: 'Mike S.',
+      role: 'Fitness Journey',
+      metrics: ['0 to 5K in 8 weeks', '35 workouts (90% success)', 'Lost 18 lbs']
     }
   ];
 
