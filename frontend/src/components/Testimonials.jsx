@@ -47,13 +47,13 @@ const Testimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-3 bg-gradient-to-r from-[rgba(255,214,10,0.15)] to-[rgba(255,0,110,0.15)] border border-[rgba(255,214,10,0.4)] rounded-full mb-6">
-            <span className="text-[#ffd60a] text-sm font-semibold tracking-wide">Beta Tester Reviews</span>
+            <span className="text-[#ffd60a] text-sm font-semibold tracking-wide">Real Results</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            What <span className="bg-gradient-to-r from-[#ffd60a] to-[#ff006e] bg-clip-text text-transparent">People Love</span> About TickBoom
+            <span className="bg-gradient-to-r from-[#ffd60a] to-[#ff006e] bg-clip-text text-transparent">Proven Success</span> Stories
           </h2>
           <p className="text-xl text-[rgba(255,255,255,0.85)] max-w-3xl mx-auto">
-            Discover how TickBoom helps users build discipline and achieve their goals.
+            See how TickBoom transforms lives with measurable results and real accountability.
           </p>
         </div>
 
