@@ -7,6 +7,7 @@ const Features = () => {
       icon: <Timer size={32} />,
       title: 'Evil Countdowns',
       description: 'Create time-bound commitments with precise countdown timers. Every second counts, every deadline matters.',
+      stat: '2,500+ commitments tracked',
       color: '#00f0ff',
       gradient: 'from-[#00f0ff] to-[#b537ff]'
     },
@@ -14,6 +15,7 @@ const Features = () => {
       icon: <Flame size={32} />,
       title: 'Streak System',
       description: 'Build unstoppable momentum with daily streaks. Every day completed strengthens your discipline.',
+      stat: '87% maintain 7-day streaks',
       color: '#ff006e',
       gradient: 'from-[#ff006e] to-[#ffd60a]'
     },
@@ -21,6 +23,7 @@ const Features = () => {
       icon: <Target size={32} />,
       title: 'Commitment Tracking',
       description: 'Track multiple goals simultaneously. See your progress in real-time with brutal honesty.',
+      stat: '3x more task completion',
       color: '#b537ff',
       gradient: 'from-[#b537ff] to-[#00f0ff]'
     },
@@ -28,6 +31,7 @@ const Features = () => {
       icon: <Skull size={32} />,
       title: 'No Mercy Mode',
       description: 'Abandon a task? It counts as failure. This app doesn\'t accept excuses—only results.',
+      stat: '92% say it keeps them accountable',
       color: '#ff006e',
       gradient: 'from-[#ff006e] to-[#b537ff]'
     },
@@ -35,6 +39,7 @@ const Features = () => {
       icon: <TrendingUp size={32} />,
       title: 'Performance Analytics',
       description: 'Track success rates, completion times, and personal bests. Data-driven discipline.',
+      stat: 'Real-time progress insights',
       color: '#3b82f6',
       gradient: 'from-[#3b82f6] to-[#00f0ff]'
     },
@@ -42,6 +47,7 @@ const Features = () => {
       icon: <Trophy size={32} />,
       title: 'Progress Tracking',
       description: 'Visualize your growth with detailed stats and streak milestones. Compete with yourself and watch your discipline compound.',
+      stat: 'Track every milestone',
       color: '#ffd60a',
       gradient: 'from-[#ffd60a] to-[#ff006e]'
     }
