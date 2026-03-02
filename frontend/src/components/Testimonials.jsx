@@ -71,7 +71,7 @@ const Testimonials = () => {
 
               {/* Rating */}
               <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
+                {[...Array(5)].map((_, i) => (
                   <Star 
                     key={i} 
                     size={16} 
@@ -85,20 +85,24 @@ const Testimonials = () => {
                 "{testimonial.text}"
               </p>
 
-              {/* Highlight Badge */}
-              <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-gradient-to-r from-[rgba(0,240,255,0.2)] to-[rgba(181,55,255,0.2)] border border-[rgba(0,240,255,0.3)] rounded-full text-[#00f0ff] text-xs font-semibold">
-                  {testimonial.highlight}
-                </span>
+              {/* Metrics */}
+              <div className="mb-4 space-y-2">
+                {testimonial.metrics.map((metric, metricIndex) => (
+                  <div key={metricIndex} className="inline-block mr-2 mb-2">
+                    <span className="inline-block px-3 py-1 bg-gradient-to-r from-[rgba(255,214,10,0.2)] to-[rgba(255,0,110,0.2)] border border-[rgba(255,214,10,0.3)] rounded-full text-[#ffd60a] text-xs font-semibold">
+                      {metric}
+                    </span>
+                  </div>
+                ))}
               </div>
 
               {/* User Info */}
               <div className="flex items-center gap-3 pt-4 border-t border-[rgba(0,240,255,0.2)]">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#00f0ff] to-[#b537ff] flex items-center justify-center font-bold text-lg">
-                  {testimonial.name.charAt(0)}
+                  {testimonial.author.charAt(0)}
                 </div>
                 <div>
-                  <div className="font-semibold text-white">{testimonial.name}</div>
+                  <div className="font-semibold text-white">{testimonial.author}</div>
                   <div className="text-sm text-[#8b8b9e]">{testimonial.role}</div>
                 </div>
               </div>
