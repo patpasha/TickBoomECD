@@ -22,7 +22,7 @@ const Testimonials = () => {
       metrics: ['12 projects completed', '60-day active streak', 'Doubled freelance income']
     },
     {
-      text: "Between 2 kids, a full-time job, and trying to exercise, I felt like I was failing at everything. TickBoom helped me commit to the bare minimum. The stats proved I wasn't failing—I was completing 85% of my commitments. That visible proof kept me going when mom guilt kicked in.",
+      text: "Between 2 kids, a full-time job, and trying to exercise, I felt like I was failing at everything. TickBoom helped me commit to the bare minimum. The stats proved I wasn\'t failing—I was completing 85% of my commitments. That visible proof kept me going when mom guilt kicked in.",
       author: 'Jennifer K.',
       role: 'Working Mom',
       metrics: ['85% completion rate', 'Lost 15 lbs in 3 months', 'Promoted at work']
