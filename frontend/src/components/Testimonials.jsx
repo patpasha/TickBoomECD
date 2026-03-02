@@ -10,7 +10,7 @@ const Testimonials = () => {
       metrics: ['C average → Dean\'s List', '47 assignments on time', '21-day study streak']
     },
     {
-      text: "Running a startup with ADHD is chaos. I had 50 unfinished projects and investors breathing down my neck. TickBoom forced me to commit: launch MVP in 30 days or face the data. Brutal? Yes. Effective? I shipped in 28 days. This isn't a todo app—it's a commitment machine.",
+      text: "Running a startup with ADHD is chaos. I had 50 unfinished projects and investors breathing down my neck. TickBoom forced me to commit: launch MVP in 30 days or face the data. Brutal? Yes. Effective? I shipped in 28 days. This isn\'t a todo app—it\'s a commitment machine.",
       author: 'Marcus T.',
       role: 'Startup Founder',
       metrics: ['MVP shipped in 28 days', 'Closed $500K seed round', 'Team uses TickBoom']
