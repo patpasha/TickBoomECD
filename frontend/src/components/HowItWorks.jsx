@@ -9,7 +9,7 @@ const HowItWorks = () => {
       title: 'Create Commitment',
       description: 'Define your goal and set a countdown timer. Be specific, be bold.',
       color: '#00f0ff',
-      screenshot: 'https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/s7kqiv1c_IMG_8423.PNG'
+      screenshot: 'https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/f2l7wkkb_IMG_8830.PNG'
     },
     {
       number: '02',
@@ -17,7 +17,7 @@ const HowItWorks = () => {
       title: 'Start Timer',
       description: 'Activate your countdown. The clock is ticking, and there\'s no pause button.',
       color: '#b537ff',
-      screenshot: 'https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/x9dlz4t4_IMG_8424.PNG'
+      screenshot: 'https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/s7kqiv1c_IMG_8423.PNG'
     },
     {
       number: '03',
@@ -33,7 +33,7 @@ const HowItWorks = () => {
       title: 'Build Discipline',
       description: 'Complete tasks, build streaks, track your growth. Transform into your best self.',
       color: '#ffd60a',
-      screenshot: 'https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/f2l7wkkb_IMG_8830.PNG'
+      screenshot: 'https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/x9dlz4t4_IMG_8424.PNG'
     }
   ];
 
