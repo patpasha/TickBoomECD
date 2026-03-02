@@ -34,7 +34,7 @@ const Testimonials = () => {
       metrics: ['Zero overtime', 'Stress dropped 50%', 'Finished 2 days early']
     },
     {
-      text: "I've had a gym membership for 4 years. Went maybe 10 times total. With TickBoom, I committed to 30-minute workouts every other day. 8 weeks later, I ran my first 5K. The app didn't coddle me into fitness—it forced me to show up.",
+      text: "I\'ve had a gym membership for 4 years. Went maybe 10 times total. With TickBoom, I committed to 30-minute workouts every other day. 8 weeks later, I ran my first 5K. The app didn\'t coddle me into fitness—it forced me to show up.",
       author: 'Mike S.',
       role: 'Fitness Journey',
       metrics: ['0 to 5K in 8 weeks', '35 workouts (90% success)', 'Lost 18 lbs']
