@@ -14,6 +14,46 @@ const SEO = ({
   const baseUrl = url || (typeof window !== 'undefined' ? window.location.origin : process.env.REACT_APP_BASE_URL || window.location.origin);
   const ogImage = image || `${baseUrl}/og-image.png`;
   
+  // FAQ Schema for rich snippets
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes TickBoom different from other task apps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TickBoom doesn't let you procrastinate. Unlike traditional todo apps with endless snooze buttons, we use countdown timers that create real urgency. You either do it or you don't—no middle ground. It's accountability, not coddling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is TickBoom only for people with ADHD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No! TickBoom is designed for everyone who struggles with procrastination and following through on commitments. We're optimized for ADHD brains but anyone tired of making excuses will benefit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I pause or extend timers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No pause button—that's the point. However, you get 3 'replan' jokers per week to reschedule a task, and 3 'grace period' extensions per week. These limited lifelines maintain accountability while acknowledging that flexibility is sometimes necessary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a free trial for paid plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! The Elite annual plan includes a 7-day free trial. You can experience unlimited commitments, advanced analytics, priority support, and all premium features risk-free."
+        }
+      }
+    ]
+  };
+  
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
