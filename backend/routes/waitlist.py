@@ -90,34 +90,37 @@ async def get_waitlist_count(request: Request):
 
 
 @router.get("/all")
-@limiter.limit("5/minute")  # Max 5 requests per minute per IP
-async def get_all_subscribers(request: Request):
+@limiter.limit("5/minute")
+async def get_all_subscribers(request: Request, limit: int = 100, skip: int = 0):
     """
-    Get all waitlist subscribers (for admin use)
-    Returns list of all emails with timestamps
-    Rate limited: 5 requests per minute per IP
+    Get all waitlist subscribers with pagination
+    
+    Args:
+        limit: Maximum number of subscribers to return (default: 100, max: 500)
+        skip: Number of subscribers to skip (default: 0)
     """
+    # Enforce maximum limit
+    limit = min(limit, 500)
+    
     try:
-        subscribers = await db.waitlist.find().sort("created_at", -1).to_list(10000)
+        # Get total count
+        total = await db.waitlist.count_documents({})
         
-        # Format response
-        result = []
-        for sub in subscribers:
-            result.append({
-                "email": sub.get("email"),
-                "created_at": sub.get("created_at"),
-                "source": sub.get("source", "landing_page")
-            })
+        # Get paginated subscribers
+        subscribers = await db.waitlist.find().sort("created_at", -1).skip(skip).limit(limit).to_list(limit)
         
         return {
-            "total": len(result),
-            "subscribers": result
+            "total": total,
+            "limit": limit,
+            "skip": skip,
+            "count": len(subscribers),
+            "subscribers": subscribers
         }
     except Exception as e:
-        logger.error(f"Error getting subscribers: {str(e)}")
+        logger.error(f"Error fetching subscribers: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Failed to get subscribers"
+            detail="Failed to fetch subscribers"
         )
 
 
