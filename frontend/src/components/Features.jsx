@@ -94,9 +94,23 @@ const Features = () => {
 
               {/* Content */}
               <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-[rgba(255,255,255,0.7)] leading-relaxed">
+              <p className="text-[rgba(255,255,255,0.7)] leading-relaxed mb-4">
                 {feature.description}
               </p>
+              
+              {/* Social Proof Stat */}
+              <div className="flex items-center gap-2 mt-auto pt-4 border-t border-[rgba(255,255,255,0.1)]">
+                <div 
+                  className="w-2 h-2 rounded-full" 
+                  style={{ background: feature.color }}
+                ></div>
+                <span 
+                  className="text-sm font-semibold"
+                  style={{ color: feature.color }}
+                >
+                  {feature.stat}
+                </span>
+              </div>
             </div>
           ))}
         </div>
