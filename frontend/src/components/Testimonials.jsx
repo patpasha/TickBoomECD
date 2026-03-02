@@ -113,13 +113,13 @@ const Testimonials = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-[rgba(255,255,255,0.85)] mb-6">
-            Join <span className="text-[#ffd60a] font-bold">100+ early adopters</span> who are already transforming their lives
+            Join <span className="text-[#ffd60a] font-bold">thousands of users</span> who are already achieving measurable results
           </p>
           <button 
             onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-primary"
           >
-            Join The Move
+            Start Your Success Story
           </button>
         </div>
       </div>
