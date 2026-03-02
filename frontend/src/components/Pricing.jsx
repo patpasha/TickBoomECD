@@ -25,6 +25,7 @@ const Pricing = () => {
       period: '/year',
       description: 'Annual billing - Save 58% compared to monthly',
       discount: 'Save $48.89/year • 7-day free trial',
+      trialInfo: ['No credit card required', 'Cancel anytime', 'Full access during trial'],
       features: [
         'Unlimited commitments',
         'Up to 5 active commitments',
