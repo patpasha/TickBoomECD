@@ -7,7 +7,7 @@ const Testimonials = () => {
       text: "I've tried every productivity app out there. They all let me hit snooze forever. TickBoom's countdown timers don't lie—either I finish my essay or I don't. My grades went from C average to making Dean's List in one semester. First app that actually works with my ADHD brain.",
       author: 'Sarah M.',
       role: 'University Student',
-      metrics: ['C average → Dean's List', '47 assignments on time', '21-day study streak']
+      metrics: ['C average → Dean\'s List', '47 assignments on time', '21-day study streak']
     },
     {
       text: "Running a startup with ADHD is chaos. I had 50 unfinished projects and investors breathing down my neck. TickBoom forced me to commit: launch MVP in 30 days or face the data. Brutal? Yes. Effective? I shipped in 28 days. This isn't a todo app—it's a commitment machine.",
