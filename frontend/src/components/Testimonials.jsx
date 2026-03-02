@@ -16,7 +16,7 @@ const Testimonials = () => {
       metrics: ['MVP shipped in 28 days', 'Closed $500K seed round', 'Team uses TickBoom']
     },
     {
-      text: "I'm a creative with zero follow-through. Every week I'd start a new portfolio project and abandon it by Thursday. The streak system changed everything. I've finished more client projects in 2 months than I did all last year.",
+      text: "I\'m a creative with zero follow-through. Every week I\'d start a new portfolio project and abandon it by Thursday. The streak system changed everything. I\'ve finished more client projects in 2 months than I did all last year.",
       author: 'Alex R.',
       role: 'Graphic Designer',
       metrics: ['12 projects completed', '60-day active streak', 'Doubled freelance income']
