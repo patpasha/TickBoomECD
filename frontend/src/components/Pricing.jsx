@@ -143,6 +143,18 @@ const Pricing = () => {
                 ))}
               </ul>
 
+              {/* Trial Info (Elite only) */}
+              {plan.trialInfo && (
+                <div className="mb-6 p-4 bg-gradient-to-r from-[rgba(181,55,255,0.1)] to-[rgba(255,0,110,0.1)] border border-[rgba(181,55,255,0.3)] rounded-lg">
+                  {plan.trialInfo.map((info, idx) => (
+                    <div key={idx} className="flex items-center gap-2 text-sm text-[rgba(255,255,255,0.9)] mb-1 last:mb-0">
+                      <Check size={16} className="text-[#00f0ff]" />
+                      <span>{info}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {/* CTA Button */}
               <button 
                 className="w-full py-4 font-bold uppercase tracking-wider transition-all rounded-xl"
