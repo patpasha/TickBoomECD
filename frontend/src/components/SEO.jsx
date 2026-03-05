@@ -2,19 +2,16 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const SEO = ({ 
-  title = 'TickBoom: Focus Timer, Task Tracker & Commitment App | ADHD-Friendly',
-  description = 'Turn chaos into action with TickBoom. Countdown timers that force a choice: Do or don\'t. Designed for everyone tired of excuses, optimized for ADHD brains, procrastinator-proof.',
-  keywords = 'focus timer, task tracker, commitment app, ADHD app, countdown timer, productivity app, habit tracker, ADHD productivity, time management, accountability app, procrastination app, streak tracker',
+  title = 'TickBoom: Focus Timer & ADHD Task Tracker | Build Discipline with Countdown Timers',
+  description = 'TickBoom is the focus timer that turns chaos into action. Countdown timers, streak tracking, and Strict Mode keep you accountable. Designed for ADHD brains, built for real life. Free on iOS.',
+  keywords = 'focus timer, ADHD timer app, task tracker, countdown timer app, commitment tracker, productivity app iOS, ADHD productivity app, habit tracker, streak tracker, time management app, procrastination app, strict mode timer, accountability app',
   url,
   image,
   type = 'website'
 }) => {
-  // Use environment variable or fallback to current window location
-  // In production, window.location.origin will automatically use the deployed domain
-  const baseUrl = url || (typeof window !== 'undefined' ? window.location.origin : process.env.REACT_APP_BASE_URL || window.location.origin);
+  const baseUrl = url || (typeof window !== 'undefined' ? window.location.origin : '');
   const ogImage = image || `${baseUrl}/og-image.png`;
   
-  // FAQ Schema for rich snippets
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -37,6 +34,14 @@ const SEO = ({
       },
       {
         "@type": "Question",
+        "name": "What is Strict Mode in TickBoom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Strict Mode locks your navigation and sends a reminder if you leave the app during a timer. It's a toggleable feature designed for maximum focus during your commitment sessions."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Can I pause or extend timers?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -50,23 +55,51 @@ const SEO = ({
           "@type": "Answer",
           "text": "Yes! The Elite annual plan includes a 7-day free trial. You can experience unlimited commitments, advanced analytics, priority support, and all premium features risk-free."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the streak system work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Complete tasks on consecutive days to build a streak. Each day you complete at least one commitment strengthens your streak. Break the chain, and you start over. Consistency builds discipline, and streaks make consistency visible."
+        }
       }
     ]
   };
   
-  const structuredData = {
+  const appSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "TickBoom: Focus Timer",
+    "name": "TickBoom",
+    "alternateName": "TickBoom Focus Timer",
     "applicationCategory": "ProductivityApplication",
-    "operatingSystem": "iOS, Android",
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "lowPrice": "0",
-      "highPrice": "79.99",
-      "offerCount": "3"
-    },
+    "operatingSystem": "iOS",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "name": "Starter (Free)"
+      },
+      {
+        "@type": "Offer",
+        "price": "6.99",
+        "priceCurrency": "USD",
+        "name": "Discipline (Monthly)"
+      },
+      {
+        "@type": "Offer",
+        "price": "34.99",
+        "priceCurrency": "USD",
+        "name": "Elite (Annual)"
+      },
+      {
+        "@type": "Offer",
+        "price": "79.99",
+        "priceCurrency": "USD",
+        "name": "Lifetime Access"
+      }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
@@ -77,12 +110,31 @@ const SEO = ({
     "description": description,
     "image": ogImage,
     "url": baseUrl,
+    "downloadUrl": "https://apps.apple.com/ca/app/tickboom-evil-countdown-timer/id6751061434",
     "author": {
       "@type": "Organization",
-      "name": "TickBoom"
+      "name": "TickBoom",
+      "url": baseUrl
     },
-    "datePublished": "2025-01",
-    "keywords": keywords
+    "datePublished": "2025-01-01",
+    "featureList": "Countdown Timers, Streak Tracking, Strict Mode, ADHD-Optimized UI, Performance Analytics, Commitment Tracking",
+    "screenshot": "https://customer-assets.emergentagent.com/job_cyber-countdown/artifacts/f2l7wkkb_IMG_8830.PNG"
+  };
+
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TickBoom",
+    "url": baseUrl,
+    "logo": `${baseUrl}/favicon.png`,
+    "sameAs": [
+      "https://x.com/TickBoomEvilCD"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@tickboom.app",
+      "contactType": "customer support"
+    }
   };
 
   return (
@@ -97,9 +149,13 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:site_name" content="TickBoom" />
+      <meta property="og:locale" content="en_US" />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@TickBoomEvilCD" />
+      <meta name="twitter:creator" content="@TickBoomEvilCD" />
       <meta name="twitter:url" content={baseUrl} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
@@ -108,9 +164,14 @@ const SEO = ({
       {/* Canonical */}
       <link rel="canonical" href={baseUrl} />
       
-      {/* Structured Data */}
+      {/* App Schema */}
       <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
+        {JSON.stringify(appSchema)}
+      </script>
+      
+      {/* Organization Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(orgSchema)}
       </script>
       
       {/* FAQ Schema */}

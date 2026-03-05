@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import WhyDifferent from './components/WhyDifferent';
 import HowItWorks from './components/HowItWorks';
+import BeforeAfter from './components/BeforeAfter';
 import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import Testimonials from './components/Testimonials';
@@ -26,14 +27,17 @@ const HomePage = () => {
     <>
       <SEO />
       <Header />
-      <Hero />
-      <Features />
-      <WhyDifferent />
-      <HowItWorks />
-      <Pricing />
-      <FAQ />
-      <Testimonials />
-      <CTA />
+      <main>
+        <Hero />
+        <Features />
+        <WhyDifferent />
+        <HowItWorks />
+        <BeforeAfter />
+        <Pricing />
+        <FAQ />
+        <Testimonials />
+        <CTA />
+      </main>
       <Footer />
     </>
   );

@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Target, Zap, Users } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white">
+      <Helmet>
+        <title>About TickBoom | The Focus Timer Built for ADHD Brains</title>
+        <meta name="description" content="Learn about TickBoom's mission: helping people build discipline through countdown timers, streak tracking, and neuroscience-backed focus tools. ADHD-optimized productivity." />
+        <link rel="canonical" href="https://tickboom.app/about" />
+      </Helmet>
       <div className="cyberpunk-bg"></div>
       
       <div className="max-w-4xl mx-auto px-6 py-16 relative z-10">

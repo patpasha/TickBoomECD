@@ -42,6 +42,10 @@ const FAQ = () => {
       answer: "Yes! The Elite annual plan includes a 7-day free trial. You can experience unlimited commitments, advanced analytics, priority support, and all premium features risk-free. Cancel anytime during the trial with no charges."
     },
     {
+      question: "What is Strict Mode?",
+      answer: "Strict Mode is a toggleable feature that locks your navigation and sends you a reminder if you leave the app during an active timer. Turn it on when you need maximum focus—turn it off when you want more flexibility. It's designed to keep you in the zone during your most important commitments."
+    },
+    {
       question: "Can I use TickBoom on Android?",
       answer: "Currently, TickBoom is available on iOS (iPhone and iPad). An Android version is in development and will be released soon. Join our newsletter to be notified when Android launches."
     },

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const Blog = () => {
   const blogPosts = [
@@ -29,6 +30,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white">
+      <Helmet>
+        <title>TickBoom Blog | Productivity, ADHD Tips & Discipline Insights</title>
+        <meta name="description" content="Read articles on building discipline, ADHD-friendly productivity techniques, and the science behind effective habit formation with TickBoom." />
+        <link rel="canonical" href="https://tickboom.app/blog" />
+      </Helmet>
       <div className="cyberpunk-bg"></div>
       
       <div className="max-w-6xl mx-auto px-6 py-16 relative z-10">
