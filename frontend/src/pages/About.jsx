@@ -32,23 +32,23 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-[rgba(255,255,255,0.85)] leading-relaxed">
-              TickBoom was born from a simple observation: most productivity apps are too forgiving. They let you snooze, reschedule, and make excuses. We took a different approach - one inspired by the ruthless accountability that actually creates change.
+              TickBoom was born from a simple observation: most productivity apps are too forgiving. They let you snooze, reschedule, and postpone indefinitely. We took a different approach — one built on transparency and structured accountability that actually drives change.
             </p>
             <p className="text-[rgba(255,255,255,0.85)] leading-relaxed mt-4">
-              Our mission is to help people transform their commitments into discipline through a system that doesn't accept excuses. We believe in positive pressure, visible accountability, and the power of consistency.
+              Our mission is to help people transform their commitments into discipline through a system that keeps you honest. We believe in transparent tracking, visible progress, and the power of consistency.
             </p>
           </section>
 
           <section className="cyber-card p-8">
             <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
               <Zap className="text-[#b537ff]" size={28} />
-              The Evil Philosophy
+              The Focus Philosophy
             </h2>
             <p className="text-[rgba(255,255,255,0.85)] leading-relaxed">
-              Why "Evil Countdown"? Because we're brutally honest about failure. In TickBoom, abandoned tasks count as failures. There's no "pause" button on your commitments. The countdown keeps ticking, just like time in real life.
+              Why countdown timers? Because structured time creates focus. In TickBoom, every commitment has a deadline—and your data tells the honest story. The countdown keeps ticking, just like time in real life.
             </p>
             <p className="text-[rgba(255,255,255,0.85)] leading-relaxed mt-4">
-              This approach creates the healthy pressure needed to overcome procrastination and build real discipline. It's not about being harsh - it's about being effective.
+              This approach creates the clarity needed to overcome procrastination and build real discipline. It's not about pressure — it's about focus and transparency.
             </p>
           </section>
 
@@ -100,7 +100,7 @@ const About = () => {
               <div className="bg-[rgba(181,55,255,0.05)] p-4 rounded-lg border-l-4 border-[#b537ff]">
                 <h3 className="font-bold text-[#b537ff] mb-2">Loss Aversion & Accountability</h3>
                 <p className="text-[rgba(255,255,255,0.85)] text-sm leading-relaxed">
-                  Our brains are wired to avoid losses more than to seek gains. By tracking failed commitments (not just successes), TickBoom leverages loss aversion to create stronger motivation. This taps into the amygdala's threat-detection system in a constructive way.
+                  Our brains are wired to avoid losses more than to seek gains. By tracking incomplete commitments alongside successes, TickBoom leverages loss aversion to create stronger motivation. This taps into the amygdala's natural response system in a constructive way.
                 </p>
               </div>
 

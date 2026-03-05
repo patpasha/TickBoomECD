@@ -48,7 +48,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-[#8b8b9e] mb-6 max-w-sm">
-              Transform your resolutions into reality with ruthless discipline. No excuses, only results.
+              Transform your resolutions into reality with focused discipline. Track your commitments, build streaks, get results.
             </p>
             {/* Social Links */}
             <div className="flex gap-4">

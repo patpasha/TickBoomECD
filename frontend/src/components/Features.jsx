@@ -1,11 +1,11 @@
 import React from 'react';
-import { Timer, Flame, Target, Skull, TrendingUp, Trophy } from 'lucide-react';
+import { Timer, Flame, Target, Lock, TrendingUp, Trophy } from 'lucide-react';
 
 const Features = () => {
   const features = [
     {
       icon: <Timer size={32} />,
-      title: 'Evil Countdowns',
+      title: 'Focus Countdowns',
       description: 'Create time-bound commitments with precise countdown timers. Every second counts, every deadline matters.',
       stat: '2,500+ commitments tracked',
       color: '#00f0ff',
@@ -22,16 +22,16 @@ const Features = () => {
     {
       icon: <Target size={32} />,
       title: 'Commitment Tracking',
-      description: 'Track multiple goals simultaneously. See your progress in real-time with brutal honesty.',
+      description: 'Track multiple goals simultaneously. See your progress in real-time with full transparency.',
       stat: '3x more task completion',
       color: '#b537ff',
       gradient: 'from-[#b537ff] to-[#00f0ff]'
     },
     {
-      icon: <Skull size={32} />,
-      title: 'No Mercy Mode',
-      description: 'Abandon a task? It counts as failure. This app doesn\'t accept excuses—only results.',
-      stat: '92% say it keeps them accountable',
+      icon: <Lock size={32} />,
+      title: 'Strict Mode',
+      description: 'Stay locked in. Strict mode blocks navigation and sends you a reminder if you leave the app during a timer. Toggle it on when you need maximum focus.',
+      stat: '92% say it keeps them focused',
       color: '#ff006e',
       gradient: 'from-[#ff006e] to-[#b537ff]'
     },

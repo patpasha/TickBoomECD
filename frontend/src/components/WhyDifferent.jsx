@@ -4,15 +4,15 @@ import { Shield, Zap, Brain, TrendingUp, Target, AlertTriangle } from 'lucide-re
 const WhyDifferent = () => {
   const differentiators = [
     {
-      icon: <AlertTriangle size={32} />,
-      title: 'No Coddling, Just Results',
-      description: 'Unlike traditional todo apps that let you snooze endlessly, TickBoom holds you accountable. Every abandoned task is recorded, creating positive pressure that transforms intentions into action.',
+      icon: <Target size={32} />,
+      title: 'Real Accountability, Real Results',
+      description: 'Unlike traditional todo apps that let you snooze endlessly, TickBoom tracks every commitment you make. See your patterns, understand your habits, and watch yourself improve over time.',
       color: '#ff006e'
     },
     {
       icon: <Zap size={32} />,
-      title: 'Evil Countdown System',
-      description: 'Time pressure activates your brain. Our countdown timers create urgency and focus, making procrastination impossible. The clock is always ticking—no pause button, no excuses.',
+      title: 'Focus Countdown System',
+      description: 'Time pressure activates your brain. Our countdown timers create urgency and deep focus, turning procrastination into action. The clock is ticking—and that\'s your superpower.',
       color: '#ffd60a'
     },
     {
@@ -23,12 +23,12 @@ const WhyDifferent = () => {
     },
     {
       icon: <TrendingUp size={32} />,
-      title: 'Streak Accountability',
-      description: 'Track your success rate, daily streaks, and completion patterns. Gamification meets discipline—see your progress, face your failures, and build lasting habits.',
+      title: 'Streak Momentum',
+      description: 'Track your success rate, daily streaks, and completion patterns. Gamification meets discipline—see your progress, spot your growth, and build lasting habits.',
       color: '#00f0ff'
     },
     {
-      icon: <Target size={32} />,
+      icon: <AlertTriangle size={32} />,
       title: 'Commitment Over Tasks',
       description: 'This isn\'t a todo list—it\'s a commitment tracker. You\'re not checking boxes, you\'re honoring promises to yourself. Every commitment matters, every deadline counts.',
       color: '#3b82f6'
@@ -36,7 +36,7 @@ const WhyDifferent = () => {
     {
       icon: <Shield size={32} />,
       title: 'Built for Real Life',
-      description: 'No unlimited snoozes. No endless "tomorrow" buttons. TickBoom respects your goals by refusing to enable your procrastination. It\'s tough love for your productivity.',
+      description: 'No unlimited snoozes. No endless "tomorrow" buttons. TickBoom respects your goals by keeping you honest. Structured flexibility with jokers and grace periods when life gets real.',
       color: '#ff006e'
     }
   ];
@@ -53,7 +53,7 @@ const WhyDifferent = () => {
             Why <span className="bg-gradient-to-r from-[#ff006e] to-[#00f0ff] bg-clip-text text-transparent">TickBoom</span> is Different
           </h2>
           <p className="text-xl text-[rgba(255,255,255,0.85)] max-w-3xl mx-auto">
-            This isn't another todo app that lets you procrastinate in peace. TickBoom is designed to push you, challenge you, and hold you accountable.
+            This isn't another todo app that lets you procrastinate in peace. TickBoom is designed to motivate you, challenge you, and keep you on track.
           </p>
         </div>
 

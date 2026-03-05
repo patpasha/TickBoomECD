@@ -11,7 +11,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What makes TickBoom different from other task apps?",
-      answer: "TickBoom doesn't let you procrastinate. Unlike traditional todo apps with endless snooze buttons, we use countdown timers that create real urgency. You either do it or you don't—no middle ground. It's accountability, not coddling."
+      answer: "TickBoom doesn't let you procrastinate. Unlike traditional todo apps with endless snooze buttons, we use countdown timers that create real urgency. You either do it or you don't—no middle ground. It's accountability that actually works."
     },
     {
       question: "Is TickBoom only for people with ADHD?",

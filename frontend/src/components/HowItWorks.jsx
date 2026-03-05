@@ -133,13 +133,13 @@ const HowItWorks = () => {
         <div className="mt-24 cyber-card p-12 text-center relative overflow-hidden">
           <div className="relative z-10">
             <h3 className="text-3xl font-bold mb-6">
-              The <span className="text-[#ff006e]">Evil</span> Philosophy
+              The <span className="text-[#ff006e]">TickBoom</span> Philosophy
             </h3>
             <p className="text-xl text-[rgba(255,255,255,0.85)] max-w-4xl mx-auto leading-relaxed">
-              Unlike traditional productivity apps that coddle failure, TickBoom embraces a strict approach.
-              <span className="text-white font-semibold"> Every abandoned task is a recorded failure.</span>
-              {' '}This creates positive pressure that transforms good intentions into lasting habits.
-              <span className="bg-gradient-to-r from-[#00f0ff] to-[#b537ff] bg-clip-text text-transparent font-semibold"> No excuses. Only results.</span>
+              Traditional productivity apps let you postpone forever. TickBoom takes a different approach:
+              <span className="text-white font-semibold"> every commitment is tracked transparently.</span>
+              {' '}Your data tells the real story—and that clarity is what transforms good intentions into lasting habits.
+              <span className="bg-gradient-to-r from-[#00f0ff] to-[#b537ff] bg-clip-text text-transparent font-semibold"> Clarity. Focus. Results.</span>
             </p>
           </div>
         </div>

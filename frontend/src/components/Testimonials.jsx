@@ -10,13 +10,13 @@ const Testimonials = () => {
       metrics: ['C average → Dean\'s List', '47 assignments on time', '21-day study streak']
     },
     {
-      text: "Running a startup with ADHD is chaos. I had 50 unfinished projects and investors breathing down my neck. TickBoom forced me to commit: launch MVP in 30 days or face the data. Brutal? Yes. Effective? I shipped in 28 days. This isn\'t a todo app—it\'s a commitment machine.",
+      text: "Running a startup with ADHD is chaos. I had 50 unfinished projects and investors breathing down my neck. TickBoom helped me commit: launch MVP in 30 days. The countdown kept me focused. I shipped in 28 days. This isn\'t a todo app—it\'s a commitment machine.",
       author: 'Marcus T.',
       role: 'Startup Founder',
       metrics: ['MVP shipped in 28 days', 'Closed $500K seed round', 'Team uses TickBoom']
     },
     {
-      text: "I\'m a creative with zero follow-through. Every week I\'d start a new portfolio project and abandon it by Thursday. The streak system changed everything. I\'ve finished more client projects in 2 months than I did all last year.",
+      text: "I\'m a creative who always started projects but never finished them. Every week, a new portfolio project abandoned by Thursday. The streak system changed everything—I finally have momentum. More client projects done in 2 months than all last year.",
       author: 'Alex R.',
       role: 'Graphic Designer',
       metrics: ['12 projects completed', '60-day active streak', 'Doubled freelance income']
@@ -34,7 +34,7 @@ const Testimonials = () => {
       metrics: ['Zero overtime', 'Stress dropped 50%', 'Finished 2 days early']
     },
     {
-      text: "I\'ve had a gym membership for 4 years. Went maybe 10 times total. With TickBoom, I committed to 30-minute workouts every other day. 8 weeks later, I ran my first 5K. The app didn\'t coddle me into fitness—it forced me to show up.",
+      text: "I\'ve had a gym membership for 4 years. Went maybe 10 times total. With TickBoom, I committed to 30-minute workouts every other day. 8 weeks later, I ran my first 5K. The countdown kept me honest—seeing my streak grow made showing up non-negotiable.",
       author: 'Mike S.',
       role: 'Fitness Journey',
       metrics: ['0 to 5K in 8 weeks', '35 workouts (90% success)', 'Lost 18 lbs']

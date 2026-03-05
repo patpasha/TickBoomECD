@@ -20,7 +20,7 @@ const Blog = () => {
     },
     {
       title: 'The Power of Accountability in Discipline',
-      excerpt: 'Why external accountability matters more than motivation. How TickBoom\'s "no mercy" approach creates lasting behavioral change...',
+      excerpt: 'Why external accountability matters more than motivation. How TickBoom\'s structured approach creates lasting behavioral change...',
       date: 'January 5, 2025',
       readTime: '6 min read',
       category: 'Psychology'
@@ -56,7 +56,7 @@ const Blog = () => {
               We're working on creating valuable content about discipline, productivity, and the psychology behind effective habit formation.
             </p>
             <p className="text-[#8b8b9e]">
-              Check back soon for articles on building discipline, ADHD-friendly productivity techniques, and the science behind our "no mercy" approach.
+              Check back soon for articles on building discipline, ADHD-friendly productivity techniques, and the science behind our focus-driven approach.
             </p>
           </div>
         </div>

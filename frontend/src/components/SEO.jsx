@@ -24,7 +24,7 @@ const SEO = ({
         "name": "What makes TickBoom different from other task apps?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "TickBoom doesn't let you procrastinate. Unlike traditional todo apps with endless snooze buttons, we use countdown timers that create real urgency. You either do it or you don't—no middle ground. It's accountability, not coddling."
+          "text": "TickBoom doesn't let you procrastinate. Unlike traditional todo apps with endless snooze buttons, we use countdown timers that create real urgency. You either do it or you don't—no middle ground. It's accountability that actually works."
         }
       },
       {
@@ -57,7 +57,7 @@ const SEO = ({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "TickBoom: Evil Countdown",
+    "name": "TickBoom: Focus Timer",
     "applicationCategory": "ProductivityApplication",
     "operatingSystem": "iOS, Android",
     "offers": {
