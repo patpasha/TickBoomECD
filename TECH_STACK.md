@@ -122,7 +122,7 @@
 
 ### Frontend (.env)
 ```bash
-REACT_APP_BACKEND_URL=https://cyber-countdown.preview.emergentagent.com
+REACT_APP_BACKEND_URL=https://strict-enforcement.preview.emergentagent.com
 WDS_SOCKET_PORT=443
 ```
 
